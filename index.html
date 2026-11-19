@@ -1,0 +1,539 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="description" content="Encargos de EE.UU. a Colombia: elige en tiendas oficiales, mándame tu lista y yo compro por ti.">
+<meta name="theme-color" content="#FCE4E0">
+<title>Closet Sale Black Friday</title>
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&family=Quicksand:wght@300;400;500;600&display=swap">
+<style>
+/* Concept: a soft rose-gold editorial page. Italic serif headlines, hair-thin rounded sans for reading, drifting blurred color behind frosted cards, a live countdown as the single focal object. */
+:root{
+  --bg:#FCE4E0;
+  --paper:rgba(255,248,245,.74);
+  --paper-solid:#FFF8F5;
+  --ink:#241517;
+  --muted:#734F54;
+  --salmon:#EE7B78;
+  --rose:#B76E79;
+  --gold:#D8A58F;
+  --line:rgba(183,110,121,.32);
+  --grad:linear-gradient(115deg,#C98672 0%,#B76E79 48%,#E3AA98 100%);
+  --serif:"Cormorant Garamond","Iowan Old Style",Georgia,serif;
+  --sans:"Quicksand","Nunito","Segoe UI",system-ui,sans-serif;
+  --ease:cubic-bezier(.2,.7,.2,1);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  background:var(--bg);color:var(--ink);font-family:var(--sans);font-weight:400;font-size:16px;line-height:1.6;
+  padding-left:max(16px,env(safe-area-inset-left,0px));
+  padding-right:max(16px,env(safe-area-inset-right,0px));
+  padding-block:0 64px;overflow-x:hidden;
+}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--bg);z-index:30}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--ink);outline-offset:3px;border-radius:8px}
+.bg{position:fixed;inset:0;z-index:0;overflow:hidden;pointer-events:none}
+.blob{position:absolute;border-radius:50%;filter:blur(70px);opacity:.75}
+.b1{width:46vmax;height:46vmax;left:-14vmax;top:-12vmax;background:#F6B3AC;animation:drift1 26s ease-in-out infinite alternate}
+.b2{width:38vmax;height:38vmax;right:-12vmax;top:28vh;background:#F2C7B5;animation:drift2 32s ease-in-out infinite alternate}
+.b3{width:34vmax;height:34vmax;left:12vw;bottom:-14vmax;background:#F8C9D2;animation:drift1 38s ease-in-out infinite alternate-reverse}
+@keyframes drift1{to{transform:translate(8vmax,6vmax) scale(1.12)}}
+@keyframes drift2{to{transform:translate(-7vmax,-5vmax) scale(1.08)}}
+.wrap{position:relative;z-index:1;max-width:1040px;margin:0 auto}
+
+h1,h2,h3{font-family:var(--serif);font-weight:500;margin:0;text-wrap:balance}
+.eyebrow{font-weight:600;font-size:12px;letter-spacing:.22em;text-transform:uppercase;color:var(--rose);margin:0 0 10px}
+
+/* header */
+.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:6px 12px;padding:12px 0 10px;background:rgba(252,228,224,.86);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.brand{font-family:var(--serif);font-style:italic;font-weight:600;font-size:26px;line-height:1;letter-spacing:.01em}
+.ig{font-weight:600;font-size:13px;text-decoration:none;border-bottom:1.5px solid var(--salmon)}
+.nav{flex:1 1 100%;display:flex;gap:4px;overflow-x:auto;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+.nav::-webkit-scrollbar{display:none}
+.nav a{flex:0 0 auto;font-weight:500;font-size:13px;text-decoration:none;padding:8px 14px;border-radius:999px;border:1px solid transparent;min-height:36px;display:inline-flex;align-items:center}
+.nav a:hover{border-color:var(--rose)}
+@media(min-width:900px){.top{flex-wrap:nowrap}.nav{flex:0 1 auto}.ig{display:none}}
+
+/* hero */
+.hero{display:grid;gap:34px;padding:clamp(28px,7vw,72px) 0 clamp(28px,5vw,48px);align-items:center}
+@media(min-width:900px){.hero{grid-template-columns:1.25fr 1fr}}
+.hero h1{font-size:clamp(60px,15vw,150px);line-height:.86;letter-spacing:-.025em}
+.hero h1 em{display:block;font-style:italic;font-weight:400;padding-left:.12em}
+.grad{color:var(--rose)}
+@supports ((-webkit-background-clip:text) or (background-clip:text)){.grad{background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent;-webkit-text-fill-color:transparent}}
+.lead{font-weight:300;font-size:clamp(18px,2.6vw,22px);line-height:1.55;max-width:44ch;margin:22px 0 0}
+.cta{display:flex;flex-wrap:wrap;gap:10px;margin-top:26px}
+.btn{font-family:var(--sans);font-weight:600;font-size:14px;letter-spacing:.03em;padding:14px 24px;border-radius:999px;border:1.5px solid var(--ink);background:var(--ink);color:var(--paper-solid);text-decoration:none;cursor:pointer;display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:46px;position:relative;overflow:hidden}
+.btn.ghost{background:transparent;color:var(--ink)}
+.btn:hover{background:var(--rose);border-color:var(--rose);color:#fff}
+.btn:not(.ghost)::after{content:"";position:absolute;inset:0;background:linear-gradient(100deg,transparent 30%,rgba(255,255,255,.35) 50%,transparent 70%);transform:translateX(-120%);animation:shine 5s ease-in-out 1.2s infinite}
+@keyframes shine{0%,60%{transform:translateX(-120%)}100%{transform:translateX(120%)}}
+
+.panel{position:relative;background:var(--paper);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border:1px solid var(--line);border-radius:28px;padding:clamp(20px,4vw,30px)}
+.seal{position:absolute;width:104px;height:104px;right:-8px;top:-52px;filter:drop-shadow(0 6px 14px rgba(183,110,121,.3))}
+.seal .ring{transform-origin:100px 100px;animation:spin 26s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+.cd-label{font-weight:600;font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--rose);margin:0 0 4px}
+.cd-date{font-family:var(--serif);font-size:clamp(22px,3.6vw,28px);line-height:1.15;margin:0 0 18px;padding-right:64px}
+.cd{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;text-align:center}
+.cell{background:var(--paper-solid);border:1px solid var(--line);border-radius:16px;padding:12px 4px}
+.cell b{display:block;font-family:var(--serif);font-weight:500;font-size:clamp(30px,6vw,44px);line-height:1;font-variant-numeric:tabular-nums}
+.cell span{font-size:11px;font-weight:500;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.cd-closed{display:none;font-family:var(--serif);font-size:24px;line-height:1.25}
+.panel p.small{margin:16px 0 0;font-size:14px;color:var(--muted);font-weight:500}
+
+/* ticker */
+.ticker{overflow:hidden;border-block:1px solid var(--line);padding:14px 0;margin:6px 0 0;-webkit-mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent);mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent)}
+.track{display:flex;width:max-content;animation:marq 60s linear infinite}
+.ticker:hover .track{animation-play-state:paused}
+.track span{font-family:var(--serif);font-style:italic;font-size:22px;white-space:nowrap;padding:0 18px}
+.track span::after{content:"✦";font-style:normal;font-size:12px;color:var(--salmon);margin-left:36px;vertical-align:middle}
+@keyframes marq{to{transform:translateX(-50%)}}
+
+/* sections */
+section{padding:clamp(40px,8vw,84px) 0 0;scroll-margin-top:120px}
+.h2{font-size:clamp(34px,6vw,58px);line-height:1;letter-spacing:-.015em}
+.h2 em{font-style:italic;font-weight:400}
+.sub{font-weight:400;color:var(--muted);max-width:56ch;margin:14px 0 28px;font-size:16px}
+.always{display:grid;gap:6px;margin-top:clamp(28px,5vw,44px);padding:clamp(20px,4vw,30px);border-radius:26px;background:var(--ink);color:var(--paper-solid)}
+.always h3{font-size:clamp(26px,4.4vw,38px);font-style:italic;font-weight:400;line-height:1.1}
+.always p{margin:6px 0 0;font-weight:300;font-size:16px;max-width:62ch;color:#F5DCD8}
+
+.steps{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,190px),1fr));gap:12px;counter-reset:s}
+.steps li{counter-increment:s;background:var(--paper);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border:1px solid var(--line);border-radius:22px;padding:20px;min-width:0}
+.steps li::before{content:counter(s);font-family:var(--serif);font-style:italic;font-size:46px;line-height:1;color:var(--rose);display:block;margin-bottom:8px}
+.steps b{display:block;font-weight:600;margin-bottom:4px}
+.steps span{color:var(--muted);font-size:15px;font-weight:400}
+
+.min{display:grid;gap:18px;margin-top:14px;padding:clamp(20px,4vw,30px);border-radius:26px;border:1px solid var(--line);background:var(--paper);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);align-items:center}
+@media(min-width:720px){.min{grid-template-columns:auto 1fr;gap:34px}}
+.min .big{font-family:var(--serif);font-size:clamp(54px,10vw,92px);line-height:.9;font-weight:500}
+.min .big small{display:block;font-family:var(--sans);font-size:12px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:var(--rose);margin-bottom:8px}
+.min p{margin:0;font-weight:400}
+.min p+p{margin-top:8px;color:var(--muted);font-size:15px}
+
+/* stores */
+.tools{display:grid;gap:12px;margin-bottom:18px}
+.search{position:relative}
+.search input{padding-left:44px}
+.search svg{position:absolute;left:16px;top:50%;transform:translateY(-50%);width:18px;height:18px;stroke:var(--rose);fill:none;stroke-width:1.6;stroke-linecap:round}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{font-family:var(--sans);font-weight:500;font-size:13px;padding:9px 16px;border-radius:999px;border:1px solid var(--rose);background:transparent;color:var(--ink);cursor:pointer;min-height:40px}
+.chip:hover{background:var(--paper)}
+.chip[aria-pressed="true"]{background:var(--ink);border-color:var(--ink);color:var(--paper-solid)}
+.count{font-size:13px;color:var(--muted);font-weight:500;margin:0 0 12px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,160px),1fr));gap:12px}
+.store{position:relative;background:var(--paper);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border:1px solid var(--line);border-radius:22px;padding:18px 16px 16px;display:flex;flex-direction:column;gap:18px;justify-content:space-between;text-decoration:none;min-width:0;min-height:128px;animation:pop .5s var(--ease) both;animation-delay:calc(var(--i,0)*18ms)}
+.store strong{font-family:var(--serif);font-weight:600;font-size:23px;line-height:1.05;overflow-wrap:anywhere}
+.store small{display:block;margin-top:6px;font-size:12px;font-weight:500;color:var(--muted)}
+.store em{font-style:normal;font-weight:600;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--rose);display:flex;justify-content:space-between;align-items:center}
+.store em::after{content:"↗";font-size:16px;transition:transform .3s var(--ease)}
+.store:hover{border-color:var(--rose);box-shadow:0 14px 30px -14px rgba(183,110,121,.55);transform:translateY(-4px)}
+.store:hover em::after{transform:translate(3px,-3px)}
+@keyframes pop{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+.empty{display:none;padding:22px;border:1px dashed var(--rose);border-radius:20px;font-weight:500}
+
+/* form */
+form{display:grid;gap:16px}
+.row2{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,220px),1fr));gap:12px}
+label{display:grid;gap:6px;font-weight:600;font-size:13px;letter-spacing:.04em;min-width:0}
+input,textarea{font-family:var(--sans);font-weight:400;font-size:16px;padding:13px 16px;border-radius:16px;border:1px solid var(--line);background:rgba(255,255,255,.85);color:var(--ink);width:100%;min-width:0}
+input::placeholder,textarea::placeholder{color:#9C7C80}
+input:focus,textarea:focus{border-color:var(--rose);outline:none;box-shadow:0 0 0 3px rgba(238,123,120,.25)}
+#items{display:grid;gap:12px}
+.item{background:var(--paper);border:1px solid var(--line);border-radius:22px;padding:16px;display:grid;gap:12px;animation:pop .45s var(--ease) both}
+.item h3{font-size:22px;font-style:italic;font-weight:500;display:flex;justify-content:space-between;align-items:center;gap:8px}
+.rm{font-family:var(--sans);background:none;border:0;color:var(--rose);font-weight:600;font-size:13px;cursor:pointer;text-decoration:underline;min-height:36px}
+.row3{display:grid;grid-template-columns:2fr 1fr 1fr;gap:12px}
+@media(max-width:600px){.row3{grid-template-columns:1fr 1fr}.row3 label:first-child{grid-column:1/-1}}
+.sumbox{display:grid;gap:10px;padding:18px;border-radius:22px;border:1px solid var(--line);background:var(--paper)}
+.sumtop{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:baseline;gap:6px 16px}
+.sumtop strong{font-family:var(--serif);font-size:32px;font-weight:500;line-height:1;font-variant-numeric:tabular-nums}
+.meter{height:8px;border-radius:99px;background:rgba(183,110,121,.2);overflow:hidden}
+.meter i{display:block;height:100%;width:0;background:var(--grad);border-radius:99px;transition:width .6s var(--ease)}
+.pill{font-size:13px;font-weight:600;color:var(--muted)}
+.pill.ok{color:#2D6A4F}
+.pill.warn{color:var(--rose)}
+.out{font-size:14px;line-height:1.55;min-height:210px;resize:vertical;font-weight:500}
+.actions{display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+.status{font-size:14px;color:var(--muted);font-weight:500}
+
+details{background:var(--paper);border:1px solid var(--line);border-radius:20px;padding:6px 20px}
+details+details{margin-top:10px}
+summary{font-weight:600;cursor:pointer;min-height:48px;display:flex;align-items:center;justify-content:space-between;gap:12px;list-style:none}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";font-family:var(--serif);font-size:28px;color:var(--rose);transition:transform .3s var(--ease)}
+details[open] summary::after{transform:rotate(45deg)}
+details p{margin:0 0 14px;color:var(--muted);font-weight:400;font-size:15px}
+footer{margin-top:clamp(48px,8vw,90px);padding-top:26px;border-top:1px solid var(--line);font-size:14px;color:var(--muted);text-align:center}
+footer .brand{display:block;color:var(--ink);margin-bottom:6px;font-size:32px}
+
+.dock{position:fixed;left:0;right:0;bottom:0;z-index:25;display:none;gap:8px;padding:10px max(16px,env(safe-area-inset-right,0px)) calc(10px + env(safe-area-inset-bottom,0px)) max(16px,env(safe-area-inset-left,0px));background:rgba(252,228,224,.92);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-top:1px solid var(--line)}
+.dock .btn{flex:1;padding:12px 10px}
+.dock[data-hide="1"]{display:none!important}
+@media(max-width:699px){.dock{display:flex}body{padding-block:0 calc(92px + env(safe-area-inset-bottom,0px))}.chips{flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;margin-inline:calc(-1 * max(16px,env(safe-area-inset-left,0px)));padding-inline:max(16px,env(safe-area-inset-left,0px))}.chips::-webkit-scrollbar{display:none}.chip{flex:0 0 auto}.cta .btn{flex:1 1 150px}.seal{width:84px;height:84px;top:-42px}.cd-date{padding-right:48px}}
+@media(max-width:380px){.grid{grid-template-columns:1fr 1fr;gap:8px}.store{padding:14px 12px}.store strong{font-size:20px}}
+
+/* motion */
+.in{animation:rise 1s var(--ease) both;animation-delay:calc(var(--d,0)*130ms)}
+@keyframes rise{from{opacity:0;transform:translateY(26px)}to{opacity:1;transform:none}}
+@supports (animation-timeline:view()){
+  .rv{animation:rise linear both;animation-timeline:view();animation-range:entry 0% entry 35%}
+}
+.btn,.chip,.store,.nav a{transition:background .25s,border-color .25s,color .25s,box-shadow .3s,transform .3s var(--ease)}
+@media(prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .blob,.track,.seal .ring,.btn::after,.in,.rv,.store,.item{animation:none!important}
+  .meter i{transition:none}
+}
+</style>
+
+<style>:root{color-scheme:light}body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
+</head>
+<body>
+<div class="bg" aria-hidden="true"><div class="blob b1"></div><div class="blob b2"></div><div class="blob b3"></div></div>
+
+<div class="wrap">
+  <header class="top">
+    <span class="brand">Closet Sale</span>
+    <a class="ig" href="https://www.instagram.com/closetsaleliav/" target="_blank" rel="noopener">@closetsaleliav</a>
+    <nav class="nav" aria-label="Secciones">
+      <a href="#como">Cómo funciona</a><a href="#minimo">Pedido mínimo</a><a href="#tiendas">Tiendas</a><a href="#pedido">Mi pedido</a><a href="#dudas">Dudas</a>
+    </nav>
+  </header>
+
+  <div class="hero">
+    <div>
+      <p class="eyebrow in">Black Friday 2026 · Encargos USA a Colombia</p>
+      <h1 class="in" style="--d:1">Black<em class="grad">Friday</em></h1>
+      <p class="lead in" style="--d:2">Entra a las tiendas oficiales de Estados Unidos, mira los precios y escoge lo que quieras. Me mandas los links y yo hago la compra por ti.</p>
+      <div class="cta in" style="--d:3">
+        <a class="btn" href="#pedido">Armar mi pedido</a>
+        <a class="btn ghost" href="#tiendas">Ver tiendas</a>
+      </div>
+    </div>
+
+    <div class="panel in" style="--d:3">
+      <svg class="seal" viewBox="0 0 200 200" aria-hidden="true">
+        <defs><path id="circ" d="M100,100 m-76,0 a76,76 0 1,1 152,0 a76,76 0 1,1 -152,0"/></defs>
+        <circle cx="100" cy="100" r="98" fill="#EE7B78"/>
+        <g class="ring"><text font-family="Quicksand,sans-serif" font-weight="600" font-size="15" fill="#fff"><textPath href="#circ" textLength="470" lengthAdjust="spacing">ENCARGOS USA · COLOMBIA · BLACK FRIDAY · </textPath></text></g>
+        <text x="100" y="124" text-anchor="middle" font-family="Cormorant Garamond,serif" font-style="italic" font-size="78" fill="#fff">%</text>
+      </svg>
+      <p class="cd-label">Recibo listas hasta</p>
+      <p class="cd-date">Sábado 28 de noviembre<br>8:00 p. m. (hora Colombia)</p>
+      <div class="cd" id="cd" role="timer" aria-label="Tiempo que queda para enviar tu lista">
+        <div class="cell"><b id="cd-d">00</b><span>Días</span></div>
+        <div class="cell"><b id="cd-h">00</b><span>Horas</span></div>
+        <div class="cell"><b id="cd-m">00</b><span>Min</span></div>
+        <div class="cell"><b id="cd-s">00</b><span>Seg</span></div>
+      </div>
+      <p class="cd-closed" id="cd-closed">La lista de Black Friday ya cerró. Los encargos siguen abiertos.</p>
+      <p class="small">Compro el domingo 29, cuando termina la mayoría de ofertas. El anticipo debe estar pago antes de la compra.</p>
+    </div>
+  </div>
+
+  <div class="ticker" aria-hidden="true"><div class="track" id="track"></div></div>
+
+  <section id="como">
+    <div class="rv">
+      <p class="eyebrow">Paso a paso</p>
+      <h2 class="h2">Tú eliges, <em>yo compro</em></h2>
+      <p class="sub">Te lo traigo desde Estados Unidos y te cotizo en pesos colombianos.</p>
+    </div>
+    <ol class="steps rv">
+      <li><b>Mira y elige</b><span>Entra a la tienda oficial de EE.UU. y revisa precios y ofertas.</span></li>
+      <li><b>Copia el link</b><span>Escoge talla y color y copia el link exacto del producto.</span></li>
+      <li><b>Mándamelo</b><span>Llena el formulario o escríbeme por Instagram.</span></li>
+      <li><b>Te cotizo</b><span>Te respondo en pesos colombianos y te explico qué incluye.</span></li>
+      <li><b>Compro</b><span>Con el anticipo hago la compra y te aviso cada etapa.</span></li>
+    </ol>
+    <div class="always rv">
+      <h3>Los encargos están abiertos todo el año</h3>
+      <p>Puedes pedirme cuando quieras, no solo en Black Friday. Ahora es el mejor momento porque las promociones están activas y terminan pronto. Después de la fecha límite sigo recibiendo tu lista, con los precios que tenga cada tienda ese día.</p>
+    </div>
+  </section>
+
+  <section id="minimo">
+    <div class="rv">
+      <p class="eyebrow">Antes de pedir</p>
+      <h2 class="h2">Pedido <em>mínimo</em></h2>
+    </div>
+    <div class="min rv">
+      <div class="big"><small>Por pedido</small><span id="minBig">US$ 50</span></div>
+      <div>
+        <p>Es la suma de los precios de todos los productos que elijas, sin importar de cuántas tiendas sean.</p>
+        <p>Así cada compra, el envío y el empaque valen la pena. Si te falta poco, agrega algo más o pídelo junto con una amiga.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="tiendas">
+    <div class="rv">
+      <p class="eyebrow">Tiendas oficiales de EE.UU.</p>
+      <h2 class="h2">Escoge <em>tus favoritas</em></h2>
+      <p class="sub">Cada tarjeta abre la tienda de Estados Unidos. Si te lleva a la de Colombia, cambia el país al final de la página.</p>
+    </div>
+    <div class="tools">
+      <label class="search" for="q" style="display:block"><span style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)">Buscar tienda</span>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
+        <input id="q" type="search" placeholder="Buscar tienda, por ejemplo Nike" autocomplete="off">
+      </label>
+      <div class="chips" id="chips" role="group" aria-label="Filtrar por categoría"></div>
+    </div>
+    <p class="count" id="count" aria-live="polite"></p>
+    <div class="grid" id="grid"></div>
+    <div class="empty" id="empty">No encontré esa tienda en la lista. Mándame el link igual en el formulario: también compro en otras tiendas de EE.UU.</div>
+  </section>
+
+  <section id="pedido">
+    <div class="rv">
+      <p class="eyebrow">Tu lista</p>
+      <h2 class="h2">Arma <em>tu pedido</em></h2>
+      <p class="sub">Agrega los productos que elegiste. Abajo se arma un mensaje listo para pegar en mi chat de Instagram.</p>
+    </div>
+    <form id="f" novalidate>
+      <div class="row2">
+        <label for="nombre">Tu nombre<input id="nombre" autocomplete="name" placeholder="Nombre y apellido"></label>
+        <label for="ciudad">Ciudad de entrega<input id="ciudad" placeholder="Bucaramanga"></label>
+      </div>
+      <div id="items"></div>
+      <div class="actions"><button type="button" class="btn ghost" id="add">+ Agregar otro producto</button></div>
+      <label for="notas">Notas (opcional)<textarea id="notas" rows="2" placeholder="Algo que deba saber: fecha que necesitas, regalo, dudas de talla…"></textarea></label>
+      <div class="sumbox" aria-live="polite">
+        <div class="sumtop"><span class="pill">Subtotal en tienda</span><strong id="subtotal">US$ 0.00</strong></div>
+        <div class="meter" aria-hidden="true"><i id="bar"></i></div>
+        <span class="pill" id="minPill"></span>
+      </div>
+      <label for="msg">Tu mensaje
+        <textarea id="msg" class="out" readonly></textarea>
+      </label>
+      <div class="actions">
+        <button type="button" class="btn" id="copy">Copiar mensaje</button>
+        <a class="btn ghost" href="https://ig.me/m/closetsaleliav" target="_blank" rel="noopener">Abrir mi Instagram</a>
+        <span class="status" id="status" role="status"></span>
+      </div>
+      <p class="status">Copia el mensaje y pégalo en el chat. El pedido empieza cuando yo te responda con la cotización.</p>
+    </form>
+  </section>
+
+  <section id="dudas">
+    <div class="rv">
+      <p class="eyebrow">Preguntas frecuentes</p>
+      <h2 class="h2">Antes de <em>escribirme</em></h2>
+    </div>
+    <div class="rv" style="margin-top:24px">
+      <details><summary>¿Los precios de las tiendas son los que me cobras?</summary><p>No. Los precios de las tiendas están en dólares y no incluyen mi servicio ni el envío a Colombia. Lo que cuenta es la cotización en pesos que te mando. Puede cambiar si la tienda cambia el precio o se agota.</p></details>
+      <details><summary>¿Hasta cuándo puedo pedir con ofertas de Black Friday?</summary><p>Recibo listas hasta el sábado 28 de noviembre a las 8:00 p. m. Compro el domingo 29, cuando termina la mayoría de promociones. Algunas ofertas pueden acabarse antes, por eso entre más pronto me escribas, mejor.</p></details>
+      <details><summary>¿Puedo pedir después de Black Friday?</summary><p>Sí. Los encargos están abiertos todo el año. Después de la fecha límite compro con los precios y promociones que tenga cada tienda ese día.</p></details>
+      <details><summary>¿Cuánto se demora?</summary><p>Cuenta desde que el paquete llega al casillero en EE.UU.: normalmente unos 5 días calendario, y hasta 8 días hábiles si hay demoras. En Black Friday las tiendas tardan más en despachar, así que te confirmo fechas con tu cotización.</p></details>
+      <details><summary>¿Se puede pedir tecnología, perfumes o líquidos?</summary><p>Sí puedes mandarme el link. Antes de cotizar confirmo si el casillero los acepta y si tienen un cargo adicional.</p></details>
+      <details><summary>La tienda me redirige a su página de Colombia</summary><p>Pasa seguido. Baja al final de la página de la tienda, cambia el país a Estados Unidos y vuelve a abrir el producto para ver el precio real de allá.</p></details>
+    </div>
+  </section>
+
+  <footer>
+    <span class="brand">Closet Sale</span>
+    Bucaramanga, Colombia · <a href="https://www.instagram.com/closetsaleliav/" target="_blank" rel="noopener">@closetsaleliav</a>
+  </footer>
+</div>
+
+<div class="dock" id="dock">
+  <a class="btn" href="#pedido">Armar mi pedido</a>
+  <a class="btn ghost" href="https://ig.me/m/closetsaleliav" target="_blank" rel="noopener">Instagram</a>
+</div>
+
+<script>
+/* Ajustes rápidos: pedido mínimo en dólares y fecha límite de listas (hora de Colombia). */
+var MIN_ORDER_USD = 50;
+var CLOSE_AT = "2026-11-28T20:00:00-05:00";
+
+var CATS = ["Todas","Deportivo","Ropa","Zapatos","Bolsos y accesorios","Belleza y perfumes","Tecnología","Outlets y descuentos"];
+var STORES = [
+ ["Nike","https://www.nike.com",["Deportivo","Zapatos","Ropa"]],
+ ["Adidas","https://www.adidas.com",["Deportivo","Zapatos","Ropa"]],
+ ["Reebok","https://www.reebok.com",["Deportivo","Zapatos","Ropa"]],
+ ["Puma","https://us.puma.com",["Deportivo","Zapatos","Ropa"]],
+ ["New Balance","https://www.newbalance.com",["Deportivo","Zapatos","Ropa"]],
+ ["Champion","https://www.champion.com",["Ropa","Deportivo"]],
+ ["Gymshark","https://www.gymshark.com",["Deportivo","Ropa"]],
+ ["Lululemon","https://shop.lululemon.com",["Deportivo","Ropa"]],
+ ["The North Face","https://www.thenorthface.com",["Ropa","Deportivo"]],
+ ["Converse","https://www.converse.com",["Zapatos","Ropa"]],
+ ["Vans","https://www.vans.com",["Zapatos","Ropa"]],
+ ["Foot Locker","https://www.footlocker.com",["Deportivo","Zapatos"]],
+ ["JD Sports","https://www.jdsports.com",["Deportivo","Zapatos","Ropa"]],
+ ["DSW","https://www.dsw.com",["Zapatos"]],
+ ["Steve Madden","https://www.stevemadden.com",["Zapatos","Bolsos y accesorios"]],
+ ["Tommy Hilfiger","https://usa.tommy.com",["Ropa","Zapatos"]],
+ ["Calvin Klein","https://www.calvinklein.us",["Ropa"]],
+ ["Polo Ralph Lauren","https://www.ralphlauren.com",["Ropa"]],
+ ["Guess","https://www.guess.com",["Ropa","Bolsos y accesorios"]],
+ ["U.S. Polo Assn.","https://uspoloassn.com",["Ropa"]],
+ ["Nautica","https://www.nautica.com",["Ropa"]],
+ ["Diesel","https://www.diesel.com",["Ropa","Zapatos"]],
+ ["Levi's","https://www.levi.com",["Ropa"]],
+ ["Gap","https://www.gap.com",["Ropa"]],
+ ["Old Navy","https://oldnavy.gap.com",["Ropa"]],
+ ["Victoria's Secret","https://www.victoriassecret.com",["Ropa","Belleza y perfumes"]],
+ ["Coach Outlet","https://www.coachoutlet.com",["Bolsos y accesorios","Outlets y descuentos"]],
+ ["Michael Kors","https://www.michaelkors.com",["Bolsos y accesorios"]],
+ ["Kate Spade Outlet","https://www.katespadeoutlet.com",["Bolsos y accesorios","Outlets y descuentos"]],
+ ["Ray-Ban","https://www.ray-ban.com/usa",["Bolsos y accesorios"]],
+ ["Sephora","https://www.sephora.com",["Belleza y perfumes"]],
+ ["Ulta Beauty","https://www.ulta.com",["Belleza y perfumes"]],
+ ["Bath & Body Works","https://www.bathandbodyworks.com",["Belleza y perfumes"]],
+ ["Apple","https://www.apple.com",["Tecnología"]],
+ ["Sony","https://electronics.sony.com",["Tecnología"]],
+ ["Dyson","https://www.dyson.com",["Tecnología"]],
+ ["Amazon","https://www.amazon.com",["Tecnología","Belleza y perfumes"]],
+ ["Walmart","https://www.walmart.com",["Tecnología","Ropa"]],
+ ["Target","https://www.target.com",["Ropa","Belleza y perfumes"]],
+ ["Macy's","https://www.macys.com",["Ropa","Bolsos y accesorios","Belleza y perfumes"]],
+ ["Nordstrom Rack","https://www.nordstromrack.com",["Outlets y descuentos","Ropa","Zapatos"]],
+ ["Marshalls","https://www.marshalls.com",["Outlets y descuentos","Ropa"]],
+ ["TJ Maxx","https://www.tjmaxx.com",["Outlets y descuentos","Ropa"]],
+ ["Sierra","https://www.sierra.com",["Outlets y descuentos","Deportivo"]],
+ ["6pm","https://www.6pm.com",["Outlets y descuentos","Zapatos","Ropa"]]
+];
+
+/* ticker */
+(function(){
+  var t = document.getElementById("track"), html = "";
+  for (var r = 0; r < 2; r++) STORES.forEach(function(s){ html += "<span>" + s[0].replace(/&/g,"&amp;") + "</span>"; });
+  t.innerHTML = html;
+})();
+
+/* countdown */
+var closeMs = new Date(CLOSE_AT).getTime();
+function pad(n){ return (n < 10 ? "0" : "") + n; }
+function tick(){
+  var left = closeMs - Date.now();
+  var cd = document.getElementById("cd"), closed = document.getElementById("cd-closed");
+  if (isNaN(left) || left <= 0){ cd.style.display = "none"; closed.style.display = "block"; return false; }
+  var s = Math.floor(left / 1000);
+  document.getElementById("cd-d").textContent = pad(Math.floor(s / 86400));
+  document.getElementById("cd-h").textContent = pad(Math.floor(s % 86400 / 3600));
+  document.getElementById("cd-m").textContent = pad(Math.floor(s % 3600 / 60));
+  document.getElementById("cd-s").textContent = pad(s % 60);
+  return true;
+}
+if (tick()){ var iv = setInterval(function(){ if (!tick()) clearInterval(iv); }, 1000); }
+
+/* stores */
+var active = "Todas", query = "";
+var chipsEl = document.getElementById("chips"), gridEl = document.getElementById("grid"), countEl = document.getElementById("count"), emptyEl = document.getElementById("empty");
+function norm(s){ return s.toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g,""); }
+function renderChips(){
+  chipsEl.innerHTML = "";
+  CATS.forEach(function(c){
+    var b = document.createElement("button");
+    b.type = "button"; b.className = "chip"; b.textContent = c;
+    b.setAttribute("aria-pressed", String(c === active));
+    b.onclick = function(){ active = c; renderChips(); renderGrid(); };
+    chipsEl.appendChild(b);
+  });
+}
+function renderGrid(){
+  gridEl.innerHTML = "";
+  var q = norm(query.trim());
+  var list = STORES.filter(function(s){
+    return (active === "Todas" || s[2].indexOf(active) > -1) && (!q || norm(s[0]).indexOf(q) > -1);
+  });
+  list.forEach(function(s, i){
+    var a = document.createElement("a");
+    a.className = "store"; a.href = s[1]; a.target = "_blank"; a.rel = "noopener"; a.style.setProperty("--i", Math.min(i, 24));
+    var top = document.createElement("div");
+    var n = document.createElement("strong"); n.textContent = s[0];
+    var c = document.createElement("small"); c.textContent = s[2][0];
+    top.appendChild(n); top.appendChild(c);
+    var e = document.createElement("em"); e.textContent = "Ver tienda";
+    a.appendChild(top); a.appendChild(e);
+    gridEl.appendChild(a);
+  });
+  countEl.textContent = list.length + (list.length === 1 ? " tienda" : " tiendas");
+  emptyEl.style.display = list.length ? "none" : "block";
+}
+document.getElementById("q").addEventListener("input", function(e){ query = e.target.value; renderGrid(); });
+
+/* order form */
+var itemsEl = document.getElementById("items"), uid = 0;
+function addItem(){
+  uid++;
+  var d = document.createElement("div"); d.className = "item";
+  d.innerHTML =
+    '<h3><span class="t"></span><button type="button" class="rm">Quitar</button></h3>' +
+    '<div class="row3">' +
+      '<label for="l'+uid+'">Link del producto<input id="l'+uid+'" data-k="link" inputmode="url" placeholder="https://…"></label>' +
+      '<label for="s'+uid+'">Tienda<input id="s'+uid+'" data-k="store" placeholder="Ej. Nike"></label>' +
+      '<label for="v'+uid+'">Talla y color<input id="v'+uid+'" data-k="variant" placeholder="Ej. M, negro"></label>' +
+      '<label for="q'+uid+'">Cantidad<input id="q'+uid+'" data-k="qty" type="number" min="1" step="1" value="1" inputmode="numeric"></label>' +
+      '<label for="p'+uid+'">Precio visto (US$)<input id="p'+uid+'" data-k="price" type="number" min="0" step="0.01" inputmode="decimal" placeholder="0.00"></label>' +
+    '</div>';
+  d.querySelector(".rm").onclick = function(){ if (itemsEl.children.length > 1){ itemsEl.removeChild(d); update(); } };
+  d.addEventListener("input", update);
+  itemsEl.appendChild(d);
+  update();
+}
+function val(d,k){ return d.querySelector('[data-k="'+k+'"]').value.trim(); }
+function update(){
+  var lines = [], total = 0, n = 0;
+  Array.prototype.forEach.call(itemsEl.children, function(d){
+    n++;
+    d.querySelector(".t").textContent = "Producto " + n;
+    var link = val(d,"link"), store = val(d,"store"), variant = val(d,"variant");
+    var qty = parseInt(val(d,"qty"),10); if (!(qty > 0)) qty = 1;
+    var price = parseFloat(val(d,"price"));
+    if (link || store || variant || price > 0){
+      if (price > 0) total += price * qty;
+      var parts = [];
+      if (store) parts.push(store);
+      if (variant) parts.push(variant);
+      parts.push("cant. " + qty);
+      if (price > 0) parts.push("US$ " + price.toFixed(2) + " c/u");
+      lines.push((lines.length + 1) + ") " + parts.join(" · ") + (link ? "\n   " + link : ""));
+    }
+  });
+  document.getElementById("subtotal").textContent = "US$ " + total.toFixed(2);
+  var pill = document.getElementById("minPill"), bar = document.getElementById("bar");
+  if (MIN_ORDER_USD > 0){
+    var pct = Math.min(100, total / MIN_ORDER_USD * 100);
+    bar.style.width = pct + "%";
+    if (total >= MIN_ORDER_USD){ pill.className = "pill ok"; pill.textContent = "Ya cumples el mínimo de US$ " + MIN_ORDER_USD; }
+    else { pill.className = "pill warn"; pill.textContent = "Te faltan US$ " + (MIN_ORDER_USD - total).toFixed(2) + " para el mínimo de US$ " + MIN_ORDER_USD; }
+  } else { pill.textContent = ""; bar.style.width = "0"; }
+  var nombre = document.getElementById("nombre").value.trim();
+  var ciudad = document.getElementById("ciudad").value.trim();
+  var notas = document.getElementById("notas").value.trim();
+  var bf = Date.now() < closeMs ? " de Black Friday" : "";
+  document.getElementById("msg").value =
+    "Hola! Quiero cotizar mi pedido" + bf + ".\n\n" +
+    "Nombre: " + (nombre || "—") + "\nCiudad: " + (ciudad || "—") + "\n\nProductos:\n" +
+    (lines.length ? lines.join("\n") : "(aún sin productos)") +
+    "\n\nSubtotal aproximado en tienda: US$ " + total.toFixed(2) +
+    (notas ? "\n\nNotas: " + notas : "");
+}
+document.getElementById("add").onclick = addItem;
+["nombre","ciudad","notas"].forEach(function(id){ document.getElementById(id).addEventListener("input", update); });
+document.getElementById("f").addEventListener("submit", function(e){ e.preventDefault(); });
+document.getElementById("copy").onclick = function(){
+  var ta = document.getElementById("msg"), st = document.getElementById("status");
+  function fallback(){ ta.focus(); ta.select(); st.textContent = "Selecciona el texto y cópialo con tu teclado."; }
+  try { navigator.clipboard.writeText(ta.value).then(function(){ st.textContent = "Mensaje copiado."; }, fallback); }
+  catch (err) { fallback(); }
+};
+
+document.getElementById("minBig").textContent = MIN_ORDER_USD > 0 ? "US$ " + MIN_ORDER_USD : "Por confirmar";
+renderChips(); renderGrid(); addItem();
+
+try {
+  var dock = document.getElementById("dock");
+  new IntersectionObserver(function(en){ dock.dataset.hide = en[0].isIntersecting ? "1" : "0"; }, {threshold:0.15}).observe(document.getElementById("pedido"));
+} catch (err) {}
+</script>
+</body>
+</html>
