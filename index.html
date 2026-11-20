@@ -3,8 +3,21 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<meta name="description" content="Encargos de EE.UU. a Colombia: elige en tiendas oficiales, mándame tu lista y yo compro por ti.">
+<meta name="description" content="Encargos de EE.UU. a Colombia: elige en tiendas oficiales, mándame tu pedido y yo lo compro y te lo traigo.">
 <meta name="theme-color" content="#FCE4E0">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="canonical" href="https://liavsalamanca.github.io/Closet-sale-/">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="es_CO">
+<meta property="og:site_name" content="Closet Sale">
+<meta property="og:title" content="Closet Sale · Encargos de EE.UU. a Colombia">
+<meta property="og:description" content="Tú eliges en las tiendas oficiales de EE.UU. y yo te lo traigo. Pedido mínimo US$25 · envío por peso incluido en ciudades principales.">
+<meta property="og:url" content="https://liavsalamanca.github.io/Closet-sale-/">
+<meta property="og:image" content="https://liavsalamanca.github.io/Closet-sale-/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://liavsalamanca.github.io/Closet-sale-/og-image.png">
 <title>Closet Sale Black Friday</title>
 
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&family=Quicksand:wght@300;400;500;600&display=swap">
@@ -50,11 +63,12 @@ h1,h2,h3{font-family:var(--serif);font-weight:500;margin:0;text-wrap:balance}
 
 /* header */
 .top{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:6px 12px;padding:12px 0 10px;background:rgba(252,228,224,.86);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
-.brand{font-family:var(--serif);font-style:italic;font-weight:600;font-size:26px;line-height:1;letter-spacing:.01em}
-.ig{font-weight:600;font-size:13px;text-decoration:none;border-bottom:1.5px solid var(--salmon)}
+.brand{font-family:var(--serif);font-style:italic;font-weight:600;font-size:26px;line-height:1;letter-spacing:.01em;display:inline-flex;align-items:center;gap:9px;text-decoration:none;min-height:44px}
+.brand img{width:34px;height:34px;flex:none}
+.ig{font-weight:600;font-size:13px;text-decoration:none;display:inline-flex;align-items:center;min-height:44px;padding:0 4px;border-bottom:1.5px solid var(--salmon)}
 .nav{flex:1 1 100%;display:flex;gap:4px;overflow-x:auto;scrollbar-width:none;-webkit-overflow-scrolling:touch}
 .nav::-webkit-scrollbar{display:none}
-.nav a{flex:0 0 auto;font-weight:500;font-size:13px;text-decoration:none;padding:8px 14px;border-radius:999px;border:1px solid transparent;min-height:36px;display:inline-flex;align-items:center}
+.nav a{flex:0 0 auto;font-weight:500;font-size:13px;text-decoration:none;padding:8px 14px;border-radius:999px;border:1px solid transparent;min-height:44px;display:inline-flex;align-items:center}
 .nav a:hover{border-color:var(--rose)}
 @media(min-width:900px){.top{flex-wrap:nowrap}.nav{flex:0 1 auto}.ig{display:none}}
 
@@ -67,7 +81,7 @@ h1,h2,h3{font-family:var(--serif);font-weight:500;margin:0;text-wrap:balance}
 @supports ((-webkit-background-clip:text) or (background-clip:text)){.grad{background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent;-webkit-text-fill-color:transparent}}
 .lead{font-weight:300;font-size:clamp(18px,2.6vw,22px);line-height:1.55;max-width:44ch;margin:22px 0 0}
 .cta{display:flex;flex-wrap:wrap;gap:10px;margin-top:26px}
-.btn{font-family:var(--sans);font-weight:600;font-size:14px;letter-spacing:.03em;padding:14px 24px;border-radius:999px;border:1.5px solid var(--ink);background:var(--ink);color:var(--paper-solid);text-decoration:none;cursor:pointer;display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:46px;position:relative;overflow:hidden}
+.btn{font-family:var(--sans);font-weight:600;font-size:14px;letter-spacing:.03em;padding:14px 24px;border-radius:999px;border:1.5px solid var(--ink);background:var(--ink);color:var(--paper-solid);text-decoration:none;cursor:pointer;display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:48px;position:relative;overflow:hidden}
 .btn.ghost{background:transparent;color:var(--ink)}
 .btn:hover{background:var(--rose);border-color:var(--rose);color:#fff}
 .btn:not(.ghost)::after{content:"";position:absolute;inset:0;background:linear-gradient(100deg,transparent 30%,rgba(255,255,255,.35) 50%,transparent 70%);transform:translateX(-120%);animation:shine 5s ease-in-out 1.2s infinite}
@@ -122,7 +136,7 @@ section{padding:clamp(40px,8vw,84px) 0 0;scroll-margin-top:120px}
 .search input{padding-left:44px}
 .search svg{position:absolute;left:16px;top:50%;transform:translateY(-50%);width:18px;height:18px;stroke:var(--rose);fill:none;stroke-width:1.6;stroke-linecap:round}
 .chips{display:flex;flex-wrap:wrap;gap:8px}
-.chip{font-family:var(--sans);font-weight:500;font-size:13px;padding:9px 16px;border-radius:999px;border:1px solid var(--rose);background:transparent;color:var(--ink);cursor:pointer;min-height:40px}
+.chip{font-family:var(--sans);font-weight:500;font-size:13px;padding:9px 16px;border-radius:999px;border:1px solid var(--rose);background:transparent;color:var(--ink);cursor:pointer;min-height:44px}
 .chip:hover{background:var(--paper)}
 .chip[aria-pressed="true"]{background:var(--ink);border-color:var(--ink);color:var(--paper-solid)}
 .count{font-size:13px;color:var(--muted);font-weight:500;margin:0 0 12px}
@@ -147,7 +161,7 @@ input:focus,textarea:focus{border-color:var(--rose);outline:none;box-shadow:0 0 
 #items{display:grid;gap:12px}
 .item{background:var(--paper);border:1px solid var(--line);border-radius:22px;padding:16px;display:grid;gap:12px;animation:pop .45s var(--ease) both}
 .item h3{font-size:22px;font-style:italic;font-weight:500;display:flex;justify-content:space-between;align-items:center;gap:8px}
-.rm{font-family:var(--sans);background:none;border:0;color:var(--rose);font-weight:600;font-size:13px;cursor:pointer;text-decoration:underline;min-height:36px}
+.rm{font-family:var(--sans);background:none;border:0;color:var(--rose);font-weight:600;font-size:13px;cursor:pointer;text-decoration:underline;min-height:44px;min-width:56px}
 .row3{display:grid;grid-template-columns:2fr 1fr 1fr;gap:12px}
 @media(max-width:600px){.row3{grid-template-columns:1fr 1fr}.row3 label:first-child{grid-column:1/-1}}
 .sumbox{display:grid;gap:10px;padding:18px;border-radius:22px;border:1px solid var(--line);background:var(--paper)}
@@ -161,6 +175,32 @@ input:focus,textarea:focus{border-color:var(--rose);outline:none;box-shadow:0 0 
 .out{font-size:14px;line-height:1.55;min-height:210px;resize:vertical;font-weight:500}
 .actions{display:flex;flex-wrap:wrap;gap:10px;align-items:center}
 .status{font-size:14px;color:var(--muted);font-weight:500}
+.btn.salmon{background:var(--salmon);border-color:var(--salmon);color:var(--ink)}
+.btn.salmon:hover{background:var(--rose);border-color:var(--rose);color:#fff}
+.ex{display:grid;gap:18px;margin-top:6px}
+@media(min-width:800px){.ex{grid-template-columns:1.15fr 1fr;align-items:start}}
+.card{background:var(--paper);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border:1px solid var(--line);border-radius:26px;padding:clamp(20px,4vw,28px);min-width:0}
+.card h3{font-size:26px;font-style:italic;font-weight:500;margin-bottom:10px}
+.card p{margin:0 0 10px;font-weight:400}
+.card p.note{font-size:14px;color:var(--muted);margin-top:14px}
+.rows{display:grid;gap:0;margin:10px 0 12px}
+.rows div{display:flex;justify-content:space-between;gap:14px;align-items:baseline;padding:10px 0;border-bottom:1px dashed var(--line);font-weight:500}
+.rows div span:last-child{font-variant-numeric:tabular-nums;text-align:right}
+.rows small{display:block;color:var(--muted);font-weight:400;font-size:13px}
+.rows .tot{border-bottom:0;font-family:var(--serif);font-size:28px;font-weight:600;padding-top:14px}
+.tag{display:inline-block;background:var(--salmon);color:var(--ink);font-weight:600;font-size:12px;letter-spacing:.06em;padding:4px 12px;border-radius:999px;margin-bottom:10px}
+.pays{display:flex;flex-wrap:wrap;gap:8px;margin:6px 0 12px}
+.pays span{border:1px solid var(--rose);border-radius:999px;padding:8px 16px;font-weight:600;font-size:14px;background:var(--paper-solid)}
+.stampcard{display:grid;grid-template-columns:repeat(auto-fit,minmax(58px,1fr));gap:10px;margin:14px 0 6px;max-width:460px}
+.stamp{aspect-ratio:1;border-radius:50%;border:2px dashed var(--rose);display:grid;place-items:center;font-family:var(--serif);font-style:italic;font-size:22px;color:var(--rose);background:var(--paper-solid)}
+.stamp.on{background:var(--salmon);border:2px solid var(--salmon);color:var(--ink)}
+.stamp.gift{border-style:solid;background:var(--ink);color:var(--paper-solid);font-size:15px;font-style:normal;font-weight:600;letter-spacing:.04em}
+.stylist{display:grid;gap:14px;background:var(--ink);color:var(--paper-solid);border-radius:26px;padding:clamp(22px,4vw,34px)}
+.stylist h2{font-size:clamp(32px,5.4vw,50px);line-height:1;font-weight:400}
+.stylist h2 em{font-style:italic}
+.stylist p{margin:0;max-width:56ch;color:#F5DCD8;font-weight:300;font-size:17px}
+.stylist .eyebrow{color:#EFB6B1}
+.stylist .btn{justify-self:start}
 
 details{background:var(--paper);border:1px solid var(--line);border-radius:20px;padding:6px 20px}
 details+details{margin-top:10px}
@@ -170,7 +210,9 @@ summary::after{content:"+";font-family:var(--serif);font-size:28px;color:var(--r
 details[open] summary::after{transform:rotate(45deg)}
 details p{margin:0 0 14px;color:var(--muted);font-weight:400;font-size:15px}
 footer{margin-top:clamp(48px,8vw,90px);padding-top:26px;border-top:1px solid var(--line);font-size:14px;color:var(--muted);text-align:center}
-footer .brand{display:block;color:var(--ink);margin-bottom:6px;font-size:32px}
+footer .brand{display:flex;justify-content:center;color:var(--ink);margin-bottom:6px;font-size:32px}
+footer .brand img{width:44px;height:44px}
+footer a{display:inline-block;padding:13px 6px}
 
 .dock{position:fixed;left:0;right:0;bottom:0;z-index:25;display:none;gap:8px;padding:10px max(16px,env(safe-area-inset-right,0px)) calc(10px + env(safe-area-inset-bottom,0px)) max(16px,env(safe-area-inset-left,0px));background:rgba(252,228,224,.92);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-top:1px solid var(--line)}
 .dock .btn{flex:1;padding:12px 10px}
@@ -199,10 +241,10 @@ footer .brand{display:block;color:var(--ink);margin-bottom:6px;font-size:32px}
 
 <div class="wrap">
   <header class="top">
-    <span class="brand">Closet Sale</span>
+    <a class="brand" href="#" aria-label="Closet Sale, inicio"><img src="mark.svg" alt="" width="34" height="34">Closet Sale</a>
     <a class="ig" href="https://www.instagram.com/closetsaleliav/" target="_blank" rel="noopener">@closetsaleliav</a>
     <nav class="nav" aria-label="Secciones">
-      <a href="#como">Cómo funciona</a><a href="#minimo">Pedido mínimo</a><a href="#tiendas">Tiendas</a><a href="#pedido">Mi pedido</a><a href="#dudas">Dudas</a>
+      <a href="#como">Cómo funciona</a><a href="#minimo">Pedido mínimo</a><a href="#precio">Precio</a><a href="#tiendas">Tiendas</a><a href="#stylist">Stylist</a><a href="#pedido">Mi pedido</a><a href="#sellos">Sellos</a><a href="#dudas">Dudas</a>
     </nav>
   </header>
 
@@ -210,7 +252,7 @@ footer .brand{display:block;color:var(--ink);margin-bottom:6px;font-size:32px}
     <div>
       <p class="eyebrow in">Black Friday 2026 · Encargos USA a Colombia</p>
       <h1 class="in" style="--d:1">Black<em class="grad">Friday</em></h1>
-      <p class="lead in" style="--d:2">Entra a las tiendas oficiales de Estados Unidos, mira los precios y escoge lo que quieras. Me mandas los links y yo hago la compra por ti.</p>
+      <p class="lead in" style="--d:2">Entra a las tiendas oficiales de Estados Unidos, mira los precios y escoge lo que quieras. Me mandas los links y yo hago la compra por ti. ¿No encuentras algo? Mándame una foto y yo te lo consigo.</p>
       <div class="cta in" style="--d:3">
         <a class="btn" href="#pedido">Armar mi pedido</a>
         <a class="btn ghost" href="#tiendas">Ver tiendas</a>
@@ -224,16 +266,16 @@ footer .brand{display:block;color:var(--ink);margin-bottom:6px;font-size:32px}
         <g class="ring"><text font-family="Quicksand,sans-serif" font-weight="600" font-size="15" fill="#fff"><textPath href="#circ" textLength="470" lengthAdjust="spacing">ENCARGOS USA · COLOMBIA · BLACK FRIDAY · </textPath></text></g>
         <text x="100" y="124" text-anchor="middle" font-family="Cormorant Garamond,serif" font-style="italic" font-size="78" fill="#fff">%</text>
       </svg>
-      <p class="cd-label">Recibo listas hasta</p>
-      <p class="cd-date">Sábado 28 de noviembre<br>8:00 p. m. (hora Colombia)</p>
-      <div class="cd" id="cd" role="timer" aria-label="Tiempo que queda para enviar tu lista">
+      <p class="cd-label">La mayoría de ofertas están hasta</p>
+      <p class="cd-date">Domingo 29 de noviembre<br>11:59 p. m. (hora Colombia)</p>
+      <div class="cd" id="cd" role="timer" aria-label="Tiempo que queda de las ofertas de Black Friday">
         <div class="cell"><b id="cd-d">00</b><span>Días</span></div>
         <div class="cell"><b id="cd-h">00</b><span>Horas</span></div>
         <div class="cell"><b id="cd-m">00</b><span>Min</span></div>
         <div class="cell"><b id="cd-s">00</b><span>Seg</span></div>
       </div>
-      <p class="cd-closed" id="cd-closed">La lista de Black Friday ya cerró. Los encargos siguen abiertos.</p>
-      <p class="small">Compro apenas me envíes lo que quieres y el pago. Las ofertas pueden acabarse antes, así que entre más pronto, mejor.</p>
+      <p class="cd-closed" id="cd-closed">Las ofertas de Black Friday ya terminaron, pero los encargos siguen abiertos todo el año.</p>
+      <p class="small">Compro apenas me envíes lo que quieres y el pago. Algunas ofertas se acaban antes, así que entre más pronto, mejor.</p>
     </div>
   </div>
 
@@ -243,18 +285,18 @@ footer .brand{display:block;color:var(--ink);margin-bottom:6px;font-size:32px}
     <div class="rv">
       <p class="eyebrow">Paso a paso</p>
       <h2 class="h2">Tú eliges, <em>yo compro</em></h2>
-      <p class="sub">Te lo traigo desde Estados Unidos y te cotizo en pesos colombianos, con envío a toda Colombia incluido en el precio final.</p>
+      <p class="sub">Te lo traigo desde Estados Unidos y te cotizo en pesos colombianos. El envío se calcula por el peso y va incluido en el precio final, en ciudades principales.</p>
     </div>
     <ol class="steps rv">
       <li><b>Mira y elige</b><span>Entra a la tienda oficial de EE.UU. y revisa precios y ofertas.</span></li>
       <li><b>Copia el link</b><span>Escoge talla y color y copia el link exacto del producto.</span></li>
-      <li><b>Mándamelo</b><span>Llena el formulario o escríbeme por Instagram.</span></li>
-      <li><b>Te cotizo</b><span>Te respondo en pesos colombianos. El precio final ya incluye el envío hasta tu puerta, estés donde estés en Colombia.</span></li>
-      <li><b>Compro</b><span>Apenas recibo tu pedido y el pago, compro de inmediato y te aviso cada etapa.</span></li>
+      <li><b>Mándamelo</b><span>Llena el formulario de abajo y envíamelo por Instagram.</span></li>
+      <li><b>Te cotizo</b><span>Te respondo en pesos colombianos, con el envío por peso ya incluido en el precio final.</span></li>
+      <li><b>Pagas y compro</b><span>Apenas recibo tu pedido y el pago, compro de inmediato y te aviso cada etapa.</span></li>
     </ol>
     <div class="always rv">
       <h3>Los encargos están abiertos todo el año</h3>
-      <p>Puedes pedirme cuando quieras, no solo en Black Friday. Ahora es el mejor momento porque las promociones están activas y terminan pronto. Después de la fecha límite sigo recibiendo tu lista, con los precios que tenga cada tienda ese día.</p>
+      <p>Puedes pedirme cuando quieras, no solo en Black Friday. Ahora es el mejor momento porque las promociones están activas y la mayoría termina el domingo 29. Después de esa fecha sigo recibiendo tus pedidos, con los precios que tenga cada tienda ese día.</p>
     </div>
   </section>
 
@@ -268,6 +310,38 @@ footer .brand{display:block;color:var(--ink);margin-bottom:6px;font-size:32px}
       <div>
         <p>Es la suma de los precios de todos los productos que elijas, sin importar de cuántas tiendas sean.</p>
         <p>Así cada compra, el envío y el empaque valen la pena. Si te falta poco, agrega algo más o pídelo junto con alguien más.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="precio">
+    <div class="rv">
+      <p class="eyebrow">Cuánto cuesta</p>
+      <h2 class="h2">Así se calcula <em>tu precio</em></h2>
+      <p class="sub">El envío se calcula por el peso de tu pedido. Va incluido en el precio final que te cotizo, y llega hasta tu casa en ciudades principales.</p>
+    </div>
+    <div class="ex rv">
+      <div class="card">
+        <span class="tag">Ejemplo</span>
+        <h3>Tenis Adidas Runfalcon 5</h3>
+        <div class="rows">
+          <div><span>Precio en la tienda<small>Con descuento, antes US$ 60.00</small></span><span>US$ 39.00</span></div>
+          <div><span>Peso aproximado</span><span>2.5 lb</span></div>
+          <div><span>Envío por peso<small>2.5 lb × US$ 5 por libra</small></span><span>US$ 12.50</span></div>
+          <div class="tot"><span>Total</span><span>US$ 51.50</span></div>
+        </div>
+        <p class="note">Te lo paso a pesos colombianos con la tasa del día y te lo confirmo en tu cotización. Es un ejemplo: el precio de la tienda y el peso real pueden cambiar.</p>
+      </div>
+      <div style="display:grid;gap:18px;min-width:0">
+        <div class="card">
+          <h3>Cómo pagas</h3>
+          <div class="pays"><span>Nequi</span><span>Llave</span><span>Daviplata</span><span>QR de Llave</span></div>
+          <p>También puedes pagar con tarjeta por un link de Mercado Pago, que además permite pagar por PSE.</p>
+        </div>
+        <div class="card">
+          <h3>¿Qué es el casillero?</h3>
+          <p>Es la dirección en EE.UU. donde llegan tus compras antes de viajar a Colombia. Yo soy tu casillero: tus compras llegan a mi dirección en EE.UU. y de ahí te las traigo.</p>
+        </div>
       </div>
     </div>
   </section>
@@ -290,11 +364,20 @@ footer .brand{display:block;color:var(--ink);margin-bottom:6px;font-size:32px}
     <div class="empty" id="empty">No encontré esa tienda en la lista. Mándame el link igual en el formulario: también compro en otras tiendas de EE.UU.</div>
   </section>
 
+  <section id="stylist">
+    <div class="stylist rv">
+      <p class="eyebrow">Servicio de stylist</p>
+      <h2>¿No encuentras lo que buscas? <em>Yo te lo consigo</em></h2>
+      <p>Soy stylist. Mándame por Instagram una foto de lo que quieres (una prenda, un outfit, una inspiración) y lo busco por ti. Te envío las opciones con su precio para que elijas la que más te guste.</p>
+      <a class="btn salmon" href="https://ig.me/m/closetsaleliav" target="_blank" rel="noopener">Mándame tu foto</a>
+    </div>
+  </section>
+
   <section id="pedido">
     <div class="rv">
       <p class="eyebrow">Tu lista</p>
       <h2 class="h2">Arma <em>tu pedido</em></h2>
-      <p class="sub">Agrega los productos que elegiste. Abajo se arma un mensaje listo para pegar en mi chat de Instagram.</p>
+      <p class="sub">Agrega los productos que elegiste. Abajo se arma tu mensaje y con un toque se copia y se abre mi chat de Instagram.</p>
     </div>
     <form id="f" novalidate>
       <div class="row2">
@@ -309,36 +392,52 @@ footer .brand{display:block;color:var(--ink);margin-bottom:6px;font-size:32px}
         <div class="meter" aria-hidden="true"><i id="bar"></i></div>
         <span class="pill" id="minPill"></span>
       </div>
-      <label for="msg">Tu mensaje
+      <label for="msg">Así se verá tu mensaje
         <textarea id="msg" class="out" readonly></textarea>
       </label>
       <div class="actions">
-        <button type="button" class="btn" id="copy">Copiar mensaje</button>
-        <a class="btn ghost" href="https://ig.me/m/closetsaleliav" target="_blank" rel="noopener">Abrir mi Instagram</a>
-        <span class="status" id="status" role="status"></span>
+        <button type="button" class="btn" id="send">Enviar por Instagram</button>
+        <a class="btn" id="wa" href="#" target="_blank" rel="noopener" hidden>Enviar por WhatsApp</a>
+        <button type="button" class="btn ghost" id="copy">Solo copiar</button>
       </div>
-      <p class="status">Copia el mensaje y pégalo en el chat. El pedido empieza cuando yo te responda con la cotización.</p>
+      <p class="status" id="status" role="status">Al tocar "Enviar por Instagram" se copia tu pedido y se abre mi chat: mantén presionado el cuadro de mensaje, elige Pegar y envía. El pedido empieza cuando yo te responda con la cotización.</p>
     </form>
+  </section>
+
+  <section id="sellos">
+    <div class="rv">
+      <p class="eyebrow">Para ti</p>
+      <h2 class="h2">Tarjeta de <em>sellos</em></h2>
+      <p class="sub" id="stampSub"></p>
+    </div>
+    <div class="card rv">
+      <div class="stampcard" id="stamps" aria-label="Ejemplo de tarjeta de sellos"></div>
+      <p class="note" id="stampNote"></p>
+    </div>
   </section>
 
   <section id="dudas">
     <div class="rv">
-      <p class="eyebrow">Preguntas frecuentes</p>
-      <h2 class="h2">Antes de <em>escribirme</em></h2>
+      <p class="eyebrow">Dudas frecuentes</p>
+      <h2 class="h2">Pregunta <em>con confianza</em></h2>
     </div>
     <div class="rv" style="margin-top:24px">
-      <details><summary>¿Llegan a toda Colombia? ¿El envío se cobra aparte?</summary><p>Sí, llego a cualquier zona de Colombia y el envío viene incluido en el precio final que te cotizo. No pagas un flete aparte ni un recargo por ciudad: lo que te digo en la cotización es lo que pagas.</p></details>
-      <details><summary>¿Los precios de las tiendas son los que me cobras?</summary><p>No. Los precios de las tiendas están en dólares y no incluyen mi servicio ni el envío. Lo que cuenta es la cotización en pesos que te mando, que ya trae todo incluido, envío a tu ciudad incluido. Puede cambiar si la tienda cambia el precio o se agota.</p></details>
-      <details><summary>¿Hasta cuándo puedo pedir con ofertas de Black Friday?</summary><p>Recibo listas hasta el sábado 28 de noviembre a las 8:00 p. m. Compro apenas me envíes lo que quieres y el pago, sin esperar al final de las promociones. Algunas ofertas pueden acabarse antes, por eso entre más pronto me escribas, mejor.</p></details>
-      <details><summary>¿Puedo pedir después de Black Friday?</summary><p>Sí. Los encargos están abiertos todo el año. Después de la fecha límite compro con los precios y promociones que tenga cada tienda ese día.</p></details>
+      <details><summary>¿Llegan a toda Colombia? ¿El envío se cobra aparte?</summary><p>El envío no se cobra aparte: va incluido en el precio final que te cotizo y se calcula por el peso de tu pedido. Está incluido en ciudades principales. Mi transportadora no llega a municipios muy pequeños, así que si vives en uno, escríbeme y miramos qué opción hay.</p></details>
+      <details><summary>¿Los precios de las tiendas son los que me cobras?</summary><p>No. Los precios de las tiendas están en dólares y no incluyen el envío, que se calcula por el peso. Lo que cuenta es la cotización en pesos que te mando, con todo incluido. Puede cambiar si la tienda cambia el precio o se agota el producto.</p></details>
+      <details><summary>¿Cómo pago?</summary><p>Por Nequi, Llave, Daviplata o con el QR de Llave. También puedo enviarte un link de Mercado Pago para pagar con tarjeta, o por PSE.</p></details>
+      <details><summary>¿Hasta cuándo duran las ofertas de Black Friday?</summary><p>La mayoría de las ofertas están hasta el domingo 29 de noviembre, aunque algunas se acaban antes. Compro apenas me envíes lo que quieres y el pago, sin esperar al final de las promociones.</p></details>
+      <details><summary>¿Puedo pedir después de Black Friday?</summary><p>Sí. Los encargos están abiertos todo el año. Después de las promociones compro con los precios que tenga cada tienda ese día.</p></details>
       <details><summary>¿Cuánto se demora?</summary><p>En máximo 15 días tu pedido está en tu casa. Es un estimado para ciudades principales y puede variar según la ciudad y la tienda. En Black Friday las tiendas tardan más en despachar, así que te confirmo fechas con tu cotización.</p></details>
-      <details><summary>¿Se puede pedir tecnología, perfumes o líquidos?</summary><p>Sí puedes mandarme el link. Antes de cotizar confirmo si el casillero los acepta y si tienen un cargo adicional.</p></details>
+      <details><summary>¿Qué pasa si el producto se agota?</summary><p>Te aviso y te busco opciones iguales o similares en otras tiendas. Si de verdad ya no está disponible, te devuelvo el dinero de ese producto siempre que el resto de tu pedido siga sumando mínimo US$ 25. Si el pedido quedaría por debajo del mínimo, lo dejamos como saldo a favor para que elijas otra cosa.</p></details>
+      <details><summary>¿Y si me llega con algún defecto?</summary><p>Cada caso se revisa por aparte. Escríbeme por Instagram y lo resolvemos.</p></details>
+      <details><summary>¿Se puede pedir tecnología, perfumes o líquidos?</summary><p>Sí puedes mandarme el link. Antes de cotizar confirmo si mi casillero los acepta y si tienen un cargo adicional.</p></details>
+      <details><summary>¿Qué es el casillero?</summary><p>Es la dirección en EE.UU. donde llegan tus compras antes de viajar a Colombia. Yo soy tu casillero: las tiendas envían a mi dirección y de ahí te lo traigo.</p></details>
       <details><summary>La tienda me redirige a su página de Colombia</summary><p>Pasa seguido. Baja al final de la página de la tienda, cambia el país a Estados Unidos y vuelve a abrir el producto para ver el precio real de allá.</p></details>
     </div>
   </section>
 
   <footer>
-    <span class="brand">Closet Sale</span>
+    <span class="brand"><img src="mark.svg" alt="" width="44" height="44">Closet Sale</span>
     Bucaramanga, Colombia · <a href="https://www.instagram.com/closetsaleliav/" target="_blank" rel="noopener">@closetsaleliav</a>
   </footer>
 </div>
@@ -349,9 +448,12 @@ footer .brand{display:block;color:var(--ink);margin-bottom:6px;font-size:32px}
 </div>
 
 <script>
-/* Ajustes rápidos: pedido mínimo en dólares y fecha límite de listas (hora de Colombia). */
+/* Ajustes rápidos (se editan aquí): pedido mínimo, fin de las ofertas (hora de Colombia), sellos y WhatsApp. */
 var MIN_ORDER_USD = 25;
-var CLOSE_AT = "2026-11-28T20:00:00-05:00";
+var CLOSE_AT = "2026-11-29T23:59:00-05:00";
+var STAMPS_GOAL = 5;                      /* sellos para la recompensa */
+var STAMP_REWARD = "un descuento de US$ 10 en el envío de tu siguiente pedido";
+var WHATSAPP = "";                        /* número con indicativo, solo dígitos. Ej: 573001234567. Vacío = el botón no se muestra */
 
 var CATS = ["Todas","Deportivo","Ropa","Zapatos","Bolsos y accesorios","Belleza y perfumes","Tecnología","Outlets y descuentos"];
 var STORES = [
@@ -398,8 +500,7 @@ var STORES = [
  ["Nordstrom Rack","https://www.nordstromrack.com",["Outlets y descuentos","Ropa","Zapatos"]],
  ["Marshalls","https://www.marshalls.com",["Outlets y descuentos","Ropa"]],
  ["TJ Maxx","https://www.tjmaxx.com",["Outlets y descuentos","Ropa"]],
- ["Sierra","https://www.sierra.com",["Outlets y descuentos","Deportivo"]],
- ["6pm","https://www.6pm.com",["Outlets y descuentos","Zapatos","Ropa"]]
+ ["Sierra","https://www.sierra.com",["Outlets y descuentos","Deportivo"]]
 ];
 
 /* ticker */
@@ -516,17 +617,39 @@ function update(){
     "Nombre: " + (nombre || "—") + "\nCiudad: " + (ciudad || "—") + "\n\nProductos:\n" +
     (lines.length ? lines.join("\n") : "(aún sin productos)") +
     "\n\nSubtotal aproximado en tienda: US$ " + total.toFixed(2) +
+    (MIN_ORDER_USD > 0 && total > 0 ? "\n" + (total >= MIN_ORDER_USD ? "Cumple el pedido mínimo de US$ " + MIN_ORDER_USD : "Faltan US$ " + (MIN_ORDER_USD - total).toFixed(2) + " para el mínimo de US$ " + MIN_ORDER_USD) : "") +
     (notas ? "\n\nNotas: " + notas : "");
+  var wa = document.getElementById("wa");
+  if (WHATSAPP){ wa.hidden = false; wa.href = "https://wa.me/" + WHATSAPP.replace(/\D/g,"") + "?text=" + encodeURIComponent(document.getElementById("msg").value); }
 }
 document.getElementById("add").onclick = addItem;
 ["nombre","ciudad","notas"].forEach(function(id){ document.getElementById(id).addEventListener("input", update); });
 document.getElementById("f").addEventListener("submit", function(e){ e.preventDefault(); });
-document.getElementById("copy").onclick = function(){
+function copyMsg(done){
   var ta = document.getElementById("msg"), st = document.getElementById("status");
-  function fallback(){ ta.focus(); ta.select(); st.textContent = "Selecciona el texto y cópialo con tu teclado."; }
-  try { navigator.clipboard.writeText(ta.value).then(function(){ st.textContent = "Mensaje copiado."; }, fallback); }
+  function fallback(){ ta.removeAttribute("readonly"); ta.focus(); ta.select(); try{ document.execCommand("copy"); st.textContent = "Mensaje copiado. Pégalo en el chat y envíalo."; }catch(e){ st.textContent = "Selecciona el texto del cuadro, cópialo y pégalo en el chat."; } ta.setAttribute("readonly",""); if (done) done(); }
+  try { navigator.clipboard.writeText(ta.value).then(function(){ st.textContent = "Mensaje copiado. Pégalo en el chat (mantén presionado y elige Pegar) y envíalo."; if (done) done(); }, fallback); }
   catch (err) { fallback(); }
+}
+document.getElementById("copy").onclick = function(){ copyMsg(); };
+document.getElementById("send").onclick = function(){
+  var w = window.open("https://ig.me/m/closetsaleliav", "_blank");
+  copyMsg(function(){ if (!w) window.location.href = "https://ig.me/m/closetsaleliav"; });
 };
+
+/* tarjeta de sellos */
+(function(){
+  var box = document.getElementById("stamps");
+  for (var i = 1; i <= STAMPS_GOAL; i++){
+    var s = document.createElement("div");
+    s.className = "stamp" + (i <= 2 ? " on" : "");
+    s.textContent = i <= 2 ? "✦" : String(i);
+    box.appendChild(s);
+  }
+  var g = document.createElement("div"); g.className = "stamp gift"; g.textContent = "Premio"; box.appendChild(g);
+  document.getElementById("stampSub").textContent = "Cada pedido de US$ " + MIN_ORDER_USD + " o más te da un sello. Junta " + STAMPS_GOAL + " y recibes " + STAMP_REWARD + ".";
+  document.getElementById("stampNote").textContent = "Yo llevo tu cuenta. Escríbeme por Instagram \"¿cuántos sellos llevo?\" y te envío tu tarjeta. Los pedidos con saldo a favor o devoluciones se cuentan según lo que finalmente compres.";
+})();
 
 document.getElementById("minBig").textContent = MIN_ORDER_USD > 0 ? "US$ " + MIN_ORDER_USD : "Por confirmar";
 renderChips(); renderGrid(); addItem();
