@@ -63,8 +63,8 @@ h1,h2,h3{font-family:var(--serif);font-weight:500;margin:0;text-wrap:balance}
 
 /* header */
 .top{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:6px 12px;padding:12px 0 10px;background:rgba(252,228,224,.86);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
-.brand{font-family:var(--serif);font-style:italic;font-weight:600;font-size:26px;line-height:1;letter-spacing:.01em;display:inline-flex;align-items:center;gap:9px;text-decoration:none;min-height:44px}
-.brand img{width:34px;height:34px;flex:none}
+.brand{font-family:var(--serif);font-style:normal;font-weight:600;font-size:28px;line-height:1;letter-spacing:.01em;display:inline-flex;align-items:center;gap:9px;text-decoration:none;min-height:44px}
+.brand em{color:var(--rose);font-weight:500}
 .ig{font-weight:600;font-size:13px;text-decoration:none;display:inline-flex;align-items:center;min-height:44px;padding:0 4px;border-bottom:1.5px solid var(--salmon)}
 .nav{flex:1 1 100%;display:flex;gap:4px;overflow-x:auto;scrollbar-width:none;-webkit-overflow-scrolling:touch}
 .nav::-webkit-scrollbar{display:none}
@@ -211,7 +211,6 @@ details[open] summary::after{transform:rotate(45deg)}
 details p{margin:0 0 14px;color:var(--muted);font-weight:400;font-size:15px}
 footer{margin-top:clamp(48px,8vw,90px);padding-top:26px;border-top:1px solid var(--line);font-size:14px;color:var(--muted);text-align:center}
 footer .brand{display:flex;justify-content:center;color:var(--ink);margin-bottom:6px;font-size:32px}
-footer .brand img{width:44px;height:44px}
 footer a{display:inline-block;padding:13px 6px}
 
 .dock{position:fixed;left:0;right:0;bottom:0;z-index:25;display:none;gap:8px;padding:10px max(16px,env(safe-area-inset-right,0px)) calc(10px + env(safe-area-inset-bottom,0px)) max(16px,env(safe-area-inset-left,0px));background:rgba(252,228,224,.92);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-top:1px solid var(--line)}
@@ -241,7 +240,7 @@ footer a{display:inline-block;padding:13px 6px}
 
 <div class="wrap">
   <header class="top">
-    <a class="brand" href="#" aria-label="Closet Sale, inicio"><img src="mark.svg" alt="" width="34" height="34">Closet Sale</a>
+    <a class="brand" href="#" aria-label="Closet Sale, inicio">Closet <em>Sale</em></a>
     <a class="ig" href="https://www.instagram.com/closetsaleliav/" target="_blank" rel="noopener">@closetsaleliav</a>
     <nav class="nav" aria-label="Secciones">
       <a href="#como">Cómo funciona</a><a href="#minimo">Pedido mínimo</a><a href="#precio">Precio</a><a href="#tiendas">Tiendas</a><a href="#stylist">Stylist</a><a href="#pedido">Mi pedido</a><a href="#sellos">Sellos</a><a href="#dudas">Dudas</a>
@@ -318,7 +317,7 @@ footer a{display:inline-block;padding:13px 6px}
     <div class="rv">
       <p class="eyebrow">Cuánto cuesta</p>
       <h2 class="h2">Así se calcula <em>tu precio</em></h2>
-      <p class="sub">El envío se calcula por el peso de tu pedido. Va incluido en el precio final que te cotizo, y llega hasta tu casa en ciudades principales.</p>
+      <p class="sub">La logística, las aduanas y el envío se calculan por el peso de tu pedido. Todo va incluido en el precio final que te cotizo, y llega hasta tu casa en ciudades principales.</p>
     </div>
     <div class="ex rv">
       <div class="card">
@@ -326,13 +325,17 @@ footer a{display:inline-block;padding:13px 6px}
         <h3>Tenis Adidas Runfalcon 5</h3>
         <div class="rows">
           <div><span>Precio en la tienda<small>Con descuento, antes US$ 60.00</small></span><span>US$ 39.00</span></div>
-          <div><span>Peso aproximado</span><span>2.5 lb</span></div>
-          <div><span>Envío por peso<small>2.5 lb × US$ 5 por libra</small></span><span>US$ 12.50</span></div>
-          <div class="tot"><span>Total</span><span>US$ 51.50</span></div>
+          <div><span>Logística, aduanas y envío<small>Se calcula por el peso de tu pedido</small></span><span>US$ 8.00</span></div>
+          <div class="tot"><span>Total</span><span>US$ 47.00</span></div>
         </div>
-        <p class="note">Te lo paso a pesos colombianos con la tasa del día y te lo confirmo en tu cotización. Es un ejemplo: el precio de la tienda y el peso real pueden cambiar.</p>
+        <p class="note">Te lo paso a pesos colombianos con la tasa del día y te lo confirmo en tu cotización. Es un ejemplo: el precio de la tienda y el costo de logística y envío pueden cambiar según tu pedido.</p>
       </div>
       <div style="display:grid;gap:18px;min-width:0">
+        <div class="card">
+          <h3>Pedidos de más de US$ 200</h3>
+          <p>En Colombia, los paquetes que valen más de US$ 200 pagan IVA. Para que no pagues ese impuesto, divido tu pedido en varios paquetes, cada uno por menos de US$ 200. Cada paquete adicional tiene un costo de US$ 3.</p>
+          <p class="note">Ejemplo: un pedido de US$ 450 se envía en 3 paquetes, es decir 2 paquetes adicionales: US$ 6 en total por dividirlo.</p>
+        </div>
         <div class="card">
           <h3>Cómo pagas</h3>
           <div class="pays"><span>Nequi</span><span>Llave</span><span>Daviplata</span><span>QR de Llave</span></div>
@@ -391,6 +394,7 @@ footer a{display:inline-block;padding:13px 6px}
         <div class="sumtop"><span class="pill">Subtotal en tienda</span><strong id="subtotal">US$ 0.00</strong></div>
         <div class="meter" aria-hidden="true"><i id="bar"></i></div>
         <span class="pill" id="minPill"></span>
+        <span class="pill" id="pkgPill"></span>
       </div>
       <label for="msg">Así se verá tu mensaje
         <textarea id="msg" class="out" readonly></textarea>
@@ -431,13 +435,15 @@ footer a{display:inline-block;padding:13px 6px}
       <details><summary>¿Qué pasa si el producto se agota?</summary><p>Te aviso y te busco opciones iguales o similares en otras tiendas. Si de verdad ya no está disponible, te devuelvo el dinero de ese producto siempre que el resto de tu pedido siga sumando mínimo US$ 25. Si el pedido quedaría por debajo del mínimo, lo dejamos como saldo a favor para que elijas otra cosa.</p></details>
       <details><summary>¿Y si me llega con algún defecto?</summary><p>Cada caso se revisa por aparte. Escríbeme por Instagram y lo resolvemos.</p></details>
       <details><summary>¿Se puede pedir tecnología, perfumes o líquidos?</summary><p>Sí puedes mandarme el link. Antes de cotizar confirmo si mi casillero los acepta y si tienen un cargo adicional.</p></details>
+      <details><summary>¿Qué incluye "logística, aduanas y envío"?</summary><p>Es todo lo que pasa entre la tienda y tu casa: el transporte desde EE.UU., el trámite de aduana para que tu paquete entre legalmente a Colombia (a eso le dicen nacionalizar) y la entrega en tu ciudad. Se calcula por el peso de tu pedido y va incluido en el precio final que te cotizo.</p></details>
+      <details><summary>¿Pago impuestos por mis compras?</summary><p>Los paquetes de hasta US$ 200 entran sin IVA. Si un paquete supera los US$ 200, paga IVA. Por eso, cuando tu pedido es grande, lo divido en varios paquetes de menos de US$ 200, con un costo de US$ 3 por cada paquete adicional.</p></details>
       <details><summary>¿Qué es el casillero?</summary><p>Es la dirección en EE.UU. donde llegan tus compras antes de viajar a Colombia. Yo soy tu casillero: las tiendas envían a mi dirección y de ahí te lo traigo.</p></details>
       <details><summary>La tienda me redirige a su página de Colombia</summary><p>Pasa seguido. Baja al final de la página de la tienda, cambia el país a Estados Unidos y vuelve a abrir el producto para ver el precio real de allá.</p></details>
     </div>
   </section>
 
   <footer>
-    <span class="brand"><img src="mark.svg" alt="" width="44" height="44">Closet Sale</span>
+    <span class="brand">Closet <em>Sale</em></span>
     Bucaramanga, Colombia · <a href="https://www.instagram.com/closetsaleliav/" target="_blank" rel="noopener">@closetsaleliav</a>
   </footer>
 </div>
@@ -608,6 +614,12 @@ function update(){
     if (total >= MIN_ORDER_USD){ pill.className = "pill ok"; pill.textContent = "Ya cumples el mínimo de US$ " + MIN_ORDER_USD; }
     else { pill.className = "pill warn"; pill.textContent = "Te faltan US$ " + (MIN_ORDER_USD - total).toFixed(2) + " para el mínimo de US$ " + MIN_ORDER_USD; }
   } else { pill.textContent = ""; bar.style.width = "0"; }
+  var pkgPill = document.getElementById("pkgPill"), pkgLine = "";
+  if (total > 200){
+    var pk = Math.ceil(total / 200 - 0.0001);
+    pkgLine = "Pasa de US$ 200: lo dividimos en " + pk + " paquetes (US$ " + ((pk - 1) * 3) + " por los paquetes adicionales)";
+    pkgPill.className = "pill warn"; pkgPill.textContent = pkgLine;
+  } else { pkgPill.textContent = ""; }
   var nombre = document.getElementById("nombre").value.trim();
   var ciudad = document.getElementById("ciudad").value.trim();
   var notas = document.getElementById("notas").value.trim();
@@ -618,6 +630,7 @@ function update(){
     (lines.length ? lines.join("\n") : "(aún sin productos)") +
     "\n\nSubtotal aproximado en tienda: US$ " + total.toFixed(2) +
     (MIN_ORDER_USD > 0 && total > 0 ? "\n" + (total >= MIN_ORDER_USD ? "Cumple el pedido mínimo de US$ " + MIN_ORDER_USD : "Faltan US$ " + (MIN_ORDER_USD - total).toFixed(2) + " para el mínimo de US$ " + MIN_ORDER_USD) : "") +
+    (pkgLine ? "\n" + pkgLine : "") +
     (notas ? "\n\nNotas: " + notas : "");
   var wa = document.getElementById("wa");
   if (WHATSAPP){ wa.hidden = false; wa.href = "https://wa.me/" + WHATSAPP.replace(/\D/g,"") + "?text=" + encodeURIComponent(document.getElementById("msg").value); }
