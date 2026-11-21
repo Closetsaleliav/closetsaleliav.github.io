@@ -18,6 +18,7 @@
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="https://liavsalamanca.github.io/Closet-sale-/og-image.png">
+<meta name="cs-version" content="2026-11-21b">
 <title>Closet Sale Liav</title>
 
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -268,6 +269,29 @@ details[open] p{animation:fadeIn .5s var(--ease) both}
   .blob,.track,.seal .ring,.btn::after,.in,.rv,.store,.item{animation:none!important}
   .meter i{transition:none}
 }
+.strip{display:grid;gap:10px;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));margin-top:26px}
+.strip div{border:1.5px solid var(--line);border-radius:18px;padding:14px 16px;background:var(--paper-solid);font-weight:600;font-size:15px;line-height:1.4;color:var(--muted)}
+.strip b{display:block;color:var(--plum);font-family:var(--serif);font-weight:400;font-size:28px;line-height:1.1}
+.ways{display:grid;gap:16px;grid-template-columns:1fr}
+@media(min-width:760px){.ways{grid-template-columns:1fr 1fr}}
+.way{border-radius:28px;padding:clamp(22px,4vw,34px);display:grid;gap:12px;align-content:start;min-width:0}
+.way.a{background:var(--plum);color:#FFF4E8}
+.way.b{background:var(--paper-solid);border:1.5px solid var(--line)}
+.way h3{font-size:clamp(28px,5vw,40px);line-height:1.05}
+.way.a h3 em{color:var(--tang)}
+.way p{margin:0;font-weight:500}
+.way.a p{color:var(--peach)}.way.b p{color:var(--muted)}
+.way .btn{justify-self:start}
+.way.a .btn{background:var(--tang);border-color:var(--tang);color:var(--plum)}
+.notice{border-radius:16px;padding:12px 16px;background:var(--paper-solid);border:1.5px solid var(--tang);color:var(--ink);font-weight:600;font-size:15px;margin:0 0 16px}
+.notice button{font:inherit;font-weight:700;background:none;border:0;color:var(--plum);text-decoration:underline;cursor:pointer;min-height:44px;padding:0 8px}
+.upd{position:fixed;z-index:40;left:max(12px,env(safe-area-inset-left,0px));right:max(12px,env(safe-area-inset-right,0px));top:calc(10px + env(safe-area-inset-top,0px));background:var(--plum);color:#FFF4E8;border-radius:18px;padding:14px 16px;box-shadow:0 18px 40px -18px rgba(0,0,0,.5);font-weight:600;font-size:15px;line-height:1.45;max-width:640px;margin-inline:auto}
+.upd .a{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}
+.upd button{font:inherit;font-weight:700;font-size:14px;border-radius:999px;border:2px solid #FFF4E8;background:transparent;color:#FFF4E8;padding:8px 16px;min-height:40px;cursor:pointer}
+.upd button.p{background:var(--tang);border-color:var(--tang);color:var(--plum)}
+.stampsmall{margin-top:clamp(36px,6vw,60px)}
+.stampsmall h3{font-size:30px;margin-bottom:6px}
+.stampsmall .stampcard{margin:12px 0}
 </style>
 
 
@@ -281,7 +305,7 @@ details[open] p{animation:fadeIn .5s var(--ease) both}
     <a class="brand" href="#" aria-label="Closet Sale Liav, inicio">CLOSET SALE<em>Liav</em></a>
     <a class="ig" href="https://www.instagram.com/closetsaleliav/" target="_blank" rel="noopener">@closetsaleliav</a>
     <nav class="nav" aria-label="Secciones">
-      <a href="#como">Cómo funciona</a><a href="#minimo">Pedido mínimo</a><a href="#precio">Precio</a><a href="#tiendas">Tiendas</a><a href="#stylist">Stylist</a><a href="#pedido">Mi pedido</a><a href="#sellos">Sellos</a><a href="#dudas">Dudas</a>
+      <a href="#como">Cómo pedir</a><a href="#tiendas">Tiendas</a><a href="#dudas">Dudas</a><a href="#pedido">Armar pedido</a>
     </nav>
   </div>
 </header>
@@ -295,7 +319,7 @@ details[open] p{animation:fadeIn .5s var(--ease) both}
       <p class="lead in" style="--d:2">Entra a cualquier tienda de Estados Unidos y escoge lo que más te guste. Yo hago la compra por ti y te lo hago llegar hasta la puerta de tu casa. ¿No encuentras lo que buscas? Mándame una foto y con mucho gusto te lo consigo.</p>
       <div class="cta in" style="--d:3">
         <a class="btn" href="#pedido">Armar mi pedido</a>
-        <a class="btn ghost" href="#tiendas">Ver tiendas</a>
+        <a class="btn ghost" href="https://ig.me/m/closetsaleliav" target="_blank" rel="noopener">Enviar screenshot</a>
       </div>
     </div>
 
@@ -319,74 +343,53 @@ details[open] p{animation:fadeIn .5s var(--ease) both}
     </div>
   </div>
 
-  <div class="ticker" aria-hidden="true"><div class="track" id="track"></div></div>
-
   <section id="como">
     <div class="rv">
-      <p class="eyebrow">Paso a paso</p>
+      <p class="eyebrow">Cómo pedir</p>
       <h2 class="h2">Elige lo que quieras y <em>yo te lo hago llegar</em></h2>
-      <p class="sub">Te acompaño en cada paso, desde que escoges tu producto hasta que llega a la puerta de tu casa. Te cotizo en pesos colombianos y la logística, las aduanas y el envío van incluidos en el precio final, en ciudades principales.</p>
+      <p class="sub">Te acompaño en cada paso, hasta que llega a la puerta de tu casa. Los encargos están abiertos todo el año.</p>
     </div>
     <ol class="steps rv">
-      <li><b>Elige lo que te guste</b><span>Entra a la tienda de EE.UU. que prefieras y escoge con calma lo que quieres.</span></li>
-      <li><b>Cópiame el link</b><span>Selecciona la talla y el color, y copia el link exacto del producto.</span></li>
-      <li><b>Cuéntame tu pedido</b><span>Completa el formulario de abajo y envíamelo por Instagram. Con gusto te respondo.</span></li>
-      <li><b>Te paso tu cotización</b><span>Te escribo con el precio final en pesos colombianos, con todo incluido.</span></li>
-      <li><b>Pagas y yo compro</b><span>Apenas recibo tu pedido y tu pago, compro de inmediato y te voy contando cada etapa.</span></li>
-      <li><b>Lo recibes en tu casa</b><span>Yo me encargo de que llegue hasta la puerta de tu casa.</span></li>
+      <li><b>Elige lo que te guste</b><span>Entra a la tienda de EE.UU. que prefieras y escoge con calma.</span></li>
+      <li><b>Cuéntame tu pedido</b><span>Mándame los links o un screenshot por Instagram.</span></li>
+      <li><b>Te paso tu cotización</b><span>Te escribo el precio final en pesos, con todo incluido.</span></li>
+      <li><b>Pagas y yo compro</b><span>Compro de inmediato y te voy contando cada etapa hasta tu casa.</span></li>
     </ol>
-    <div class="always rv">
-      <h3>Los encargos están abiertos todo el año</h3>
-      <p>Puedes escribirme cuando quieras, no solo en Black Friday. Ahora es un gran momento porque hay muchas promociones activas y cada tienda maneja sus propias fechas (la mayoría hasta el sábado 28 de noviembre). Después de esa fecha sigo recibiendo tus pedidos, con los precios que tenga cada tienda ese día.</p>
+    <div class="strip rv">
+      <div><b id="minBig">US$ 25</b>Pedido mínimo, sumando todas las tiendas</div>
+      <div><b>Todo incluido</b>Logística, aduanas y envío, en ciudades principales</div>
+      <div><b>Nequi · Llave · Daviplata</b>También con QR de Llave</div>
+      <div><b>Hasta 15 días</b>A ciudades principales. En Black Friday puede tardar un poco más</div>
     </div>
-  </section>
-
-  <section id="minimo">
-    <div class="rv">
-      <p class="eyebrow">Antes de pedir</p>
-      <h2 class="h2">Pedido <em>mínimo</em></h2>
-    </div>
-    <div class="min rv">
-      <div class="big"><small>Por pedido</small><span id="minBig">US$ 25</span></div>
-      <div>
-        <p>Es la suma de los precios de todos los productos que elijas, sin importar de cuántas tiendas sean.</p>
-        <p>Si te falta poco, puedes agregar algo más o pedirlo junto con alguien más.</p>
-      </div>
-    </div>
-  </section>
-
-  <section id="precio">
-    <div class="rv">
-      <p class="eyebrow">Cuánto cuesta</p>
-      <h2 class="h2">Así se calcula <em>tu precio</em></h2>
-      <p class="sub">La logística, las aduanas y el envío se calculan por el peso de tu pedido. Todo va incluido en el precio final que te cotizo, y llega hasta tu casa en ciudades principales.</p>
-    </div>
-    <div class="ex rv">
+    <div class="ex rv" style="margin-top:26px">
       <div class="card">
         <span class="tag">Ejemplo</span>
         <h3>2 brasieres deportivos Adidas AeroReact</h3>
         <div class="rows">
           <div><span>Precio en la tienda<small>2 × US$ 20.00, precio de Black Friday</small></span><span>US$ 40.00</span></div>
-          <div><span>Logística, aduanas y envío<small>Incluye impuestos de la tienda y se calcula por el peso</small></span><span>US$ 9.65</span></div>
+          <div><span>Logística, aduanas y envío<small>Se calcula por el peso</small></span><span>US$ 9.65</span></div>
           <div class="tot"><span>Total</span><span>US$ 49.65</span></div>
         </div>
-        <p class="note">Te lo paso a pesos colombianos con la tasa del día y te lo confirmo en tu cotización. Es un ejemplo: el precio de la tienda y el costo de logística y envío pueden cambiar según tu pedido.</p>
+        <p class="note">Te lo paso a pesos con la tasa del día en tu cotización. Es un ejemplo: el precio puede cambiar según tu pedido.</p>
       </div>
-      <div style="display:grid;gap:18px;min-width:0">
-        <div class="card">
-          <h3>Pedidos de más de US$ 200</h3>
-          <p>En Colombia, los paquetes que valen más de US$ 200 pagan IVA. Por eso, cuando tu pedido es grande, lo divido en varios paquetes, cada uno por menos de US$ 200, y los envío en días distintos. Cada paquete adicional tiene un costo de US$ 3.</p>
-          <p class="note">Ejemplo: un pedido de US$ 450 se envía en 3 paquetes que salen en días distintos, es decir 2 paquetes adicionales: US$ 6 en total por dividirlo. Cada paquete te llega en su propia fecha.</p>
-        </div>
-        <div class="card">
-          <h3>Cómo pagas</h3>
-          <div class="pays"><span>Nequi</span><span>Llave</span><span>Daviplata</span><span>QR de Llave</span></div>
-          
-        </div>
-        <div class="card">
-          <h3>¿Qué es el casillero?</h3>
-          <p>Es la dirección en EE.UU. donde llegan tus compras antes de viajar a Colombia. Yo soy tu casillero: tus compras llegan a mi dirección en EE.UU. y de ahí te las traigo.</p>
-        </div>
+    </div>
+  </section>
+
+  <section id="formas">
+    <div class="rv">
+      <p class="eyebrow">Dos formas de pedir</p>
+      <h2 class="h2">Elige <em>la más fácil para ti</em></h2>
+    </div>
+    <div class="ways rv">
+      <div class="way a">
+        <h3>Envíame <em>un screenshot</em></h3>
+        <p>Mándame por Instagram una captura de lo que te gusta (prendas, outfits, links). Yo te acompaño y te asesoro por mensaje directo, y te envío las opciones con su precio.</p>
+        <a class="btn" href="https://ig.me/m/closetsaleliav" target="_blank" rel="noopener">Escribirme por Instagram</a>
+      </div>
+      <div class="way b">
+        <h3>Arma <em>tu lista</em></h3>
+        <p>Si prefieres, llena tu lista aquí. Se arma tu mensaje y con un toque se abre mi chat.</p>
+        <a class="btn" href="#pedido">Armar mi pedido</a>
       </div>
     </div>
   </section>
@@ -409,20 +412,13 @@ details[open] p{animation:fadeIn .5s var(--ease) both}
     <div class="empty" id="empty">No encontré esa tienda en la lista. Mándame el link igual en el formulario: también compro en otras tiendas de EE.UU.</div>
   </section>
 
-  <section id="stylist">
-    <div class="stylist rv">
-      <p class="eyebrow">Servicio de stylist</p>
-      <h2>¿No encuentras lo que buscas? <em>Yo te lo consigo</em></h2>
-      <p>Soy stylist, así que con mucho cariño busco por ti. Mándame por Instagram una foto de lo que quieres (una prenda, un outfit, una inspiración) y te envío las opciones con su precio para que elijas la que más te guste.</p>
-      <a class="btn salmon" href="https://ig.me/m/closetsaleliav" target="_blank" rel="noopener">Mándame tu foto</a>
-    </div>
-  </section>
-
   <section id="pedido">
     <div class="rv">
       <p class="eyebrow">Tu lista</p>
       <h2 class="h2">Arma <em>tu pedido</em></h2>
       <p class="sub">Agrega los productos que elegiste. Abajo se arma tu mensaje y con un toque se copia y se abre mi chat de Instagram, donde con gusto te respondo.</p>
+      <p class="notice" id="draftNote">Tu lista se guarda como borrador en este dispositivo. Aun así, ten cuidado: si recargas o cierras la página sin enviar tu pedido, puedes perder lo que escribiste. Envíalo antes.</p>
+      <p class="notice" id="draftRestored" hidden>Recuperé tu borrador, tu lista sigue aquí. <button type="button" id="draftClear">Empezar de cero</button></p>
     </div>
     <form id="f" novalidate>
       <div class="row2">
@@ -450,39 +446,29 @@ details[open] p{animation:fadeIn .5s var(--ease) both}
     </form>
   </section>
 
-  <section id="sellos">
-    <div class="rv">
-      <p class="eyebrow">Para ti</p>
-      <h2 class="h2">Tarjeta de <em>sellos</em></h2>
-      <p class="sub" id="stampSub"></p>
-    </div>
-    <div class="card rv">
-      <div class="stampcard" id="stamps" aria-label="Ejemplo de tarjeta de sellos"></div>
-      <p class="note" id="stampNote"></p>
-    </div>
-  </section>
-
   <section id="dudas">
     <div class="rv">
       <p class="eyebrow">Con mucho gusto te ayudo</p>
       <h2 class="h2">Si tienes <em>alguna duda</em></h2>
-      <p class="sub">Aquí te dejo las respuestas a lo que más me preguntan. Si no encuentras la tuya, escríbeme por Instagram y con gusto te ayudo.</p>
     </div>
     <div class="rv" style="margin-top:24px">
-      <details><summary>¿Puedo pedir de cualquier tienda de EE.UU.?</summary><p>Sí. Puedes entrar a la tienda oficial que quieras en Estados Unidos y escoger lo que más te guste. Las que aparecen aquí son solo algunas, y si la tuya no está, mándame el link y con gusto te ayudo.</p></details>
-      <details><summary>¿Llegan a toda Colombia? ¿El envío se cobra aparte?</summary><p>El envío no se cobra aparte: va incluido en el precio final que te cotizo y se calcula por el peso de tu pedido. Está incluido en ciudades principales. Mi transportadora no llega a municipios muy pequeños, así que si vives en uno, escríbeme y miramos juntos qué opción hay.</p></details>
-      <details><summary>¿Los precios de las tiendas son los que me cobras?</summary><p>No. Los precios de las tiendas están en dólares y no incluyen la logística, las aduanas ni el envío. Lo que cuenta es la cotización en pesos que te mando, con todo incluido. Puede cambiar si la tienda cambia el precio o se agota el producto.</p></details>
-      <details><summary>¿Cómo pago?</summary><p>Por Nequi, Llave, Daviplata o con el QR de Llave.</p></details>
-      <details><summary>¿Hasta cuándo puedo pedir?</summary><p>Los encargos están abiertos todo el año. Para las ofertas de Black Friday, cada tienda maneja sus propias fechas y la mayoría están activas hasta el sábado 28 de noviembre, aunque algunas terminan antes. Compro apenas me envíes tu pedido y el pago, sin esperar al final de la promoción.</p></details>
-      <details><summary>¿Puedo pedir después de Black Friday?</summary><p>Claro que sí. Después de las promociones compro con los precios que tenga cada tienda ese día.</p></details>
-      <details><summary>¿Cuánto se demora?</summary><p>Normalmente tu pedido llega a tu casa en máximo 15 días, como estimado para ciudades principales. Por el volumen de pedidos de Black Friday, esta vez puede demorar un poco más. Te confirmo la fecha estimada con tu cotización.</p></details>
-      <details><summary>¿Qué pasa si el producto se agota?</summary><p>Te aviso y te busco opciones iguales o similares en otras tiendas. Si de verdad ya no está disponible, te devuelvo el dinero de ese producto siempre que el resto de tu pedido siga sumando mínimo US$ 25. Si el pedido quedara por debajo del mínimo, lo dejamos como saldo a favor para que elijas otra cosa.</p></details>
+      <details><summary>¿Hasta cuándo puedo pedir?</summary><p>Los encargos están abiertos todo el año. Para las ofertas de Black Friday, cada tienda maneja sus propias fechas y la mayoría están activas hasta el sábado 28 de noviembre a las 10 p. m., aunque algunas terminan antes. Compro apenas me envíes tu pedido y el pago, sin esperar al final de la promoción.</p></details>
+      <details><summary>¿Cuánto se demora?</summary><p>Normalmente tu pedido llega a tu casa en máximo 15 días, como estimado para ciudades principales. Por el volumen de pedidos de Black Friday, esta vez se demorará un poco más. Te confirmo la fecha estimada con tu cotización.</p></details>
+      <details><summary>¿Cómo pago?</summary><p>Por Nequi, Llave, Daviplata o con el QR de Llave. Te paso los datos junto con tu cotización.</p></details>
+      <details><summary>¿Qué incluye "logística, aduanas y envío"?</summary><p>Es todo lo que pasa entre la tienda y tu casa: el transporte desde EE.UU. (yo soy tu casillero, tus compras llegan a mi dirección en Florida), el trámite de aduana y la entrega en tu ciudad. Se calcula por el peso y va incluido en el precio final que te cotizo, en ciudades principales. Si vives en un municipio pequeño, escríbeme y miramos qué opción hay.</p></details>
+      <details><summary>¿Puedo pedir tecnología, perfumes y líquidos?</summary><p>Sí, se puede. Mándame el link y cada caso lo reviso de forma independiente. Por el peso y el tipo de producto, la logística puede costar distinto, así que te confirmo todo en tu cotización.</p></details>
+      <details><summary>¿Qué pasa si el producto se agota?</summary><p>Te aviso y te busco opciones iguales o similares en otras tiendas. Si ya no está disponible, te devuelvo el dinero de ese producto siempre que el resto de tu pedido siga sumando mínimo US$ 25. Si quedara por debajo, lo dejamos como saldo a favor para que elijas otra cosa.</p></details>
       <details><summary>¿Y si me llega con algún defecto?</summary><p>Cada caso se revisa con cuidado. Escríbeme por Instagram y lo resolvemos juntos.</p></details>
-      <details><summary>¿Puedo pedir tecnología, perfumes y líquidos?</summary><p>Sí, se puede. Mándame el link y cada caso lo reviso de forma independiente. Por el peso y el tipo de producto, la logística de estos artículos puede costar distinto, así que te confirmo todo en tu cotización.</p></details>
-      <details><summary>¿Qué incluye "logística, aduanas y envío"?</summary><p>Es todo lo que pasa entre la tienda y tu casa: el transporte desde EE.UU., el trámite de aduana para que tu paquete entre legalmente a Colombia (a eso le dicen nacionalizar) y la entrega en tu ciudad. Se calcula por el peso de tu pedido y va incluido en el precio final que te cotizo.</p></details>
-      <details><summary>¿Pago impuestos por mis compras?</summary><p>Los paquetes de hasta US$ 200 entran sin IVA. Si un paquete supera los US$ 200, paga IVA. Por eso, cuando tu pedido es grande, lo divido en varios paquetes de menos de US$ 200, que envío en días distintos y te llegan en fechas diferentes, con un costo de US$ 3 por cada paquete adicional.</p></details>
-      <details><summary>¿Qué es el casillero?</summary><p>Es la dirección en EE.UU. donde llegan tus compras antes de viajar a Colombia. Yo soy tu casillero: las tiendas envían a mi dirección y de ahí te lo hago llegar.</p></details>
-      <details><summary>La tienda me redirige a su página de Colombia</summary><p>Pasa seguido. Baja al final de la página de la tienda, cambia el país a Estados Unidos y vuelve a abrir el producto para ver el precio real de allá.</p></details>
+      <details><summary>¿Pago impuestos? ¿Y si mi pedido es grande?</summary><p>Los paquetes de hasta US$ 200 entran sin IVA. Si un paquete supera los US$ 200, paga IVA. Por eso, cuando tu pedido es grande, lo divido en varios paquetes de menos de US$ 200, que envío en días distintos y te llegan en fechas diferentes, con un costo de US$ 3 por cada paquete adicional. Por ejemplo, un pedido de US$ 450 va en 3 paquetes: US$ 6 en total por dividirlo.</p></details>
+    </div>
+  </section>
+
+  <section class="stampsmall rv" id="sellos">
+    <div class="card">
+      <h3>Tarjeta de sellos</h3>
+      <p class="sub" id="stampSub" style="margin:0"></p>
+      <div class="stampcard" id="stamps" aria-label="Ejemplo de tarjeta de sellos"></div>
+      <p class="note" id="stampNote"></p>
     </div>
   </section>
 
@@ -552,13 +538,6 @@ var STORES = [
  ["TJ Maxx","https://www.tjmaxx.com",["Outlets y descuentos","Ropa"]],
  ["Sierra","https://www.sierra.com",["Outlets y descuentos","Deportivo"]]
 ];
-
-/* ticker */
-(function(){
-  var t = document.getElementById("track"), html = "";
-  for (var r = 0; r < 2; r++) STORES.forEach(function(s){ html += "<span>" + s[0].replace(/&/g,"&amp;") + "</span>"; });
-  t.innerHTML = html;
-})();
 
 /* countdown */
 var closeMs = new Date(CLOSE_AT).getTime();
@@ -709,7 +688,72 @@ document.getElementById("send").onclick = function(){
 })();
 
 document.getElementById("minBig").textContent = MIN_ORDER_USD > 0 ? "US$ " + MIN_ORDER_USD : "Por confirmar";
-renderChips(); renderGrid(); addItem();
+renderChips(); renderGrid();
+
+/* borrador, avisos y versión nueva */
+var DRAFT_KEY = "cs_draft_v1", sent = false, saveT = 0;
+function lsGet(k){ try { return localStorage.getItem(k); } catch(e){ return null; } }
+function lsSet(k,v){ try { localStorage.setItem(k,v); } catch(e){} }
+function lsDel(k){ try { localStorage.removeItem(k); } catch(e){} }
+function snapshot(){
+  var items = [];
+  Array.prototype.forEach.call(itemsEl.children, function(d){
+    var o = {}; Array.prototype.forEach.call(d.querySelectorAll("[data-k]"), function(i){ o[i.dataset.k] = i.value; }); items.push(o);
+  });
+  return { nombre: document.getElementById("nombre").value, ciudad: document.getElementById("ciudad").value, notas: document.getElementById("notas").value, items: items };
+}
+function hasContent(d){
+  return !!(d.nombre.trim() || d.ciudad.trim() || d.notas.trim() || d.items.some(function(o){ return (o.link||"").trim() || (o.store||"").trim() || (o.variant||"").trim() || parseFloat(o.price) > 0; }));
+}
+function saveDraft(){
+  clearTimeout(saveT);
+  saveT = setTimeout(function(){ var d = snapshot(); if (hasContent(d)) lsSet(DRAFT_KEY, JSON.stringify(d)); else lsDel(DRAFT_KEY); }, 400);
+}
+function restoreDraft(){
+  var raw = lsGet(DRAFT_KEY); if (!raw) return false;
+  try {
+    var d = JSON.parse(raw); if (!d || !hasContent(d)) return false;
+    document.getElementById("nombre").value = d.nombre || ""; document.getElementById("ciudad").value = d.ciudad || ""; document.getElementById("notas").value = d.notas || "";
+    (d.items && d.items.length ? d.items : [{}]).forEach(function(o){
+      addItem(); var box = itemsEl.lastChild;
+      Object.keys(o).forEach(function(k){ var el = box.querySelector('[data-k="'+k+'"]'); if (el) el.value = o[k]; });
+    });
+    update(); return true;
+  } catch(e){ return false; }
+}
+if (restoreDraft()) document.getElementById("draftRestored").hidden = false; else addItem();
+document.getElementById("f").addEventListener("input", function(){ sent = false; saveDraft(); });
+document.getElementById("add").addEventListener("click", saveDraft);
+itemsEl.addEventListener("click", function(e){ if (e.target.classList.contains("rm")) saveDraft(); });
+document.getElementById("draftClear").onclick = function(){
+  lsDel(DRAFT_KEY); itemsEl.innerHTML = ""; ["nombre","ciudad","notas"].forEach(function(id){ document.getElementById(id).value = ""; });
+  addItem(); document.getElementById("draftRestored").hidden = true;
+};
+document.getElementById("send").addEventListener("click", function(){ sent = true; });
+window.addEventListener("beforeunload", function(e){
+  if (sent) return; var d = snapshot(); if (!hasContent(d)) return;
+  e.preventDefault(); e.returnValue = "";
+});
+
+/* aviso cuando publico una versión nueva */
+(function(){
+  var cur = (document.querySelector('meta[name="cs-version"]')||{}).content, shown = false;
+  function check(){
+    if (shown || !window.fetch || !cur) return;
+    fetch(location.pathname + "?v=" + Date.now(), {cache:"no-store"}).then(function(r){ return r.text(); }).then(function(t){
+      var m = t.match(/name="cs-version" content="([^"]+)"/);
+      if (!m || m[1] === cur || shown) return;
+      shown = true;
+      var b = document.createElement("div"); b.className = "upd"; b.setAttribute("role","alert");
+      b.innerHTML = "<strong>Acabo de actualizar la página.</strong><br>Ten cuidado: si recargas ahora, lo que tienes sin enviar se pierde. Guardé un borrador en tu dispositivo, pero lo más seguro es enviar tu pedido antes.<div class='a'><button class='p' type='button' id='updLater'>Entendido, sigo</button><button type='button' id='updReload'>Recargar</button></div>";
+      document.body.appendChild(b);
+      document.getElementById("updLater").onclick = function(){ b.remove(); };
+      document.getElementById("updReload").onclick = function(){ saveDraft(); setTimeout(function(){ sent = true; location.reload(); }, 450); };
+    }).catch(function(){});
+  }
+  setInterval(check, 180000);
+  document.addEventListener("visibilitychange", function(){ if (!document.hidden) check(); });
+})();
 
 try {
   var dock = document.getElementById("dock");
