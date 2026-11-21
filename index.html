@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<meta name="description" content="Closet Sale Liav: elige lo que quieras de cualquier tienda de EE.UU. y yo te lo hago llegar hasta la puerta de tu casa en Colombia. Pedido mínimo US$15.">
+<meta name="description" content="Closet Sale Liav: elige lo que quieras de cualquier tienda de EE.UU. y yo te lo hago llegar hasta la puerta de tu casa en Colombia. Pedido mínimo US$25.">
 <meta name="theme-color" content="#7F1633">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="canonical" href="https://liavsalamanca.github.io/Closet-sale-/">
@@ -11,7 +11,7 @@
 <meta property="og:locale" content="es_CO">
 <meta property="og:site_name" content="Closet Sale Liav">
 <meta property="og:title" content="Closet Sale Liav · Ya empezó el Black Friday">
-<meta property="og:description" content="Elige lo que quieras de cualquier tienda de EE.UU. y yo te lo hago llegar hasta la puerta de tu casa. Pedido mínimo US$15.">
+<meta property="og:description" content="Elige lo que quieras de cualquier tienda de EE.UU. y yo te lo hago llegar hasta la puerta de tu casa. Pedido mínimo US$25.">
 <meta property="og:url" content="https://liavsalamanca.github.io/Closet-sale-/">
 <meta property="og:image" content="https://liavsalamanca.github.io/Closet-sale-/og-image.png">
 <meta property="og:image:width" content="1200">
@@ -227,7 +227,21 @@ footer a{display:inline-block;padding:13px 6px}
   .rv{animation:rise linear both;animation-timeline:view();animation-range:entry 0% entry 35%}
 }
 .btn,.chip,.store,.nav a{transition:background .25s,border-color .25s,color .25s,box-shadow .3s,transform .3s var(--ease)}
+.steps li,.card,details,.store{transition:transform .5s var(--ease),box-shadow .5s var(--ease),border-color .4s,background .4s}
+.steps li:hover,.card:hover{transform:translateY(-5px);box-shadow:0 20px 40px -22px rgba(127,22,51,.5);border-color:var(--plum)}
+details:hover{border-color:var(--plum)}
+details[open] p{animation:fadeIn .5s var(--ease) both}
+@keyframes fadeIn{from{opacity:0;transform:translateY(-6px)}to{opacity:1;transform:none}}
+.steps li::before{transition:transform .6s var(--ease)}
+.steps li:hover::before{transform:scale(1.12) rotate(-4deg)}
+.seal{animation:floaty 6s ease-in-out infinite}
+@keyframes floaty{50%{transform:translateY(-8px) rotate(3deg)}}
+.h2 em,h1 em{background:linear-gradient(var(--tang),var(--tang)) 0 92%/0% 3px no-repeat;animation:underline 1.4s var(--ease) .9s forwards}
+@keyframes underline{to{background-size:100% 3px}}
+.cd b,.cd-box{transition:transform .4s var(--ease)}
+.steps li:nth-child(2){animation-delay:.05s}.steps li:nth-child(3){animation-delay:.1s}.steps li:nth-child(4){animation-delay:.15s}.steps li:nth-child(5){animation-delay:.2s}.steps li:nth-child(6){animation-delay:.25s}
 @media(prefers-reduced-motion:reduce){
+  .seal,.h2 em,h1 em,details[open] p{animation:none!important;background-size:100% 3px}
   html{scroll-behavior:auto}
   .blob,.track,.seal .ring,.btn::after,.in,.rv,.store,.item{animation:none!important}
   .meter i{transition:none}
@@ -311,10 +325,10 @@ footer a{display:inline-block;padding:13px 6px}
       <h2 class="h2">Pedido <em>mínimo</em></h2>
     </div>
     <div class="min rv">
-      <div class="big"><small>Por pedido</small><span id="minBig">US$ 15</span></div>
+      <div class="big"><small>Por pedido</small><span id="minBig">US$ 25</span></div>
       <div>
         <p>Es la suma de los precios de todos los productos que elijas, sin importar de cuántas tiendas sean.</p>
-        <p>Así cada compra y cada envío valen la pena. Si te falta poco, puedes agregar algo más o pedirlo junto con alguien más.</p>
+        <p>Si te falta poco, puedes agregar algo más o pedirlo junto con alguien más.</p>
       </div>
     </div>
   </section>
@@ -328,11 +342,11 @@ footer a{display:inline-block;padding:13px 6px}
     <div class="ex rv">
       <div class="card">
         <span class="tag">Ejemplo</span>
-        <h3>Brasier deportivo Adidas AeroReact</h3>
+        <h3>2 brasieres deportivos Adidas AeroReact</h3>
         <div class="rows">
-          <div><span>Precio en la tienda<small>Precio de Black Friday en la tienda</small></span><span>US$ 20.00</span></div>
-          <div><span>Logística, aduanas y envío<small>Incluye impuestos de la tienda y se calcula por el peso</small></span><span>US$ 5.22</span></div>
-          <div class="tot"><span>Total</span><span>US$ 25.22</span></div>
+          <div><span>Precio en la tienda<small>2 × US$ 20.00, precio de Black Friday</small></span><span>US$ 40.00</span></div>
+          <div><span>Logística, aduanas y envío<small>Incluye impuestos de la tienda y se calcula por el peso</small></span><span>US$ 9.65</span></div>
+          <div class="tot"><span>Total</span><span>US$ 49.65</span></div>
         </div>
         <p class="note">Te lo paso a pesos colombianos con la tasa del día y te lo confirmo en tu cotización. Es un ejemplo: el precio de la tienda y el costo de logística y envío pueden cambiar según tu pedido.</p>
       </div>
@@ -345,7 +359,7 @@ footer a{display:inline-block;padding:13px 6px}
         <div class="card">
           <h3>Cómo pagas</h3>
           <div class="pays"><span>Nequi</span><span>Llave</span><span>Daviplata</span><span>QR de Llave</span></div>
-          <p>También puedes pagar con tarjeta por un link de Mercado Pago, que además permite pagar por PSE.</p>
+          
         </div>
         <div class="card">
           <h3>¿Qué es el casillero?</h3>
@@ -436,13 +450,13 @@ footer a{display:inline-block;padding:13px 6px}
       <details><summary>¿Puedo pedir de cualquier tienda de EE.UU.?</summary><p>Sí. Puedes entrar a la tienda oficial que quieras en Estados Unidos y escoger lo que más te guste. Las que aparecen aquí son solo algunas, y si la tuya no está, mándame el link y con gusto te ayudo.</p></details>
       <details><summary>¿Llegan a toda Colombia? ¿El envío se cobra aparte?</summary><p>El envío no se cobra aparte: va incluido en el precio final que te cotizo y se calcula por el peso de tu pedido. Está incluido en ciudades principales. Mi transportadora no llega a municipios muy pequeños, así que si vives en uno, escríbeme y miramos juntos qué opción hay.</p></details>
       <details><summary>¿Los precios de las tiendas son los que me cobras?</summary><p>No. Los precios de las tiendas están en dólares y no incluyen la logística, las aduanas ni el envío. Lo que cuenta es la cotización en pesos que te mando, con todo incluido. Puede cambiar si la tienda cambia el precio o se agota el producto.</p></details>
-      <details><summary>¿Cómo pago?</summary><p>Por Nequi, Llave, Daviplata o con el QR de Llave. Si prefieres, también puedo enviarte un link de Mercado Pago para pagar con tarjeta o por PSE.</p></details>
+      <details><summary>¿Cómo pago?</summary><p>Por Nequi, Llave, Daviplata o con el QR de Llave.</p></details>
       <details><summary>¿Hasta cuándo puedo pedir?</summary><p>Los encargos están abiertos todo el año. Para las ofertas de Black Friday, cada tienda maneja sus propias fechas y la mayoría están activas hasta el sábado 28 de noviembre, aunque algunas terminan antes. Compro apenas me envíes tu pedido y el pago, sin esperar al final de la promoción.</p></details>
       <details><summary>¿Puedo pedir después de Black Friday?</summary><p>Claro que sí. Después de las promociones compro con los precios que tenga cada tienda ese día.</p></details>
       <details><summary>¿Cuánto se demora?</summary><p>Normalmente tu pedido llega a tu casa en máximo 15 días, como estimado para ciudades principales. Por el volumen de pedidos de Black Friday, esta vez puede demorar un poco más. Te confirmo la fecha estimada con tu cotización.</p></details>
-      <details><summary>¿Qué pasa si el producto se agota?</summary><p>Te aviso y te busco opciones iguales o similares en otras tiendas. Si de verdad ya no está disponible, te devuelvo el dinero de ese producto siempre que el resto de tu pedido siga sumando mínimo US$ 15. Si el pedido quedara por debajo del mínimo, lo dejamos como saldo a favor para que elijas otra cosa.</p></details>
+      <details><summary>¿Qué pasa si el producto se agota?</summary><p>Te aviso y te busco opciones iguales o similares en otras tiendas. Si de verdad ya no está disponible, te devuelvo el dinero de ese producto siempre que el resto de tu pedido siga sumando mínimo US$ 25. Si el pedido quedara por debajo del mínimo, lo dejamos como saldo a favor para que elijas otra cosa.</p></details>
       <details><summary>¿Y si me llega con algún defecto?</summary><p>Cada caso se revisa con cuidado. Escríbeme por Instagram y lo resolvemos juntos.</p></details>
-      <details><summary>¿Puedo pedir tecnología, perfumes y líquidos?</summary><p>Sí, se puede. Mándame el link y te cotizo. Por el peso y el tipo de producto, la logística de estos artículos puede costar distinto, así que te lo confirmo en tu cotización.</p></details>
+      <details><summary>¿Puedo pedir tecnología, perfumes y líquidos?</summary><p>Sí, se puede. Mándame el link y cada caso lo reviso de forma independiente. Por el peso y el tipo de producto, la logística de estos artículos puede costar distinto, así que te confirmo todo en tu cotización.</p></details>
       <details><summary>¿Qué incluye "logística, aduanas y envío"?</summary><p>Es todo lo que pasa entre la tienda y tu casa: el transporte desde EE.UU., el trámite de aduana para que tu paquete entre legalmente a Colombia (a eso le dicen nacionalizar) y la entrega en tu ciudad. Se calcula por el peso de tu pedido y va incluido en el precio final que te cotizo.</p></details>
       <details><summary>¿Pago impuestos por mis compras?</summary><p>Los paquetes de hasta US$ 200 entran sin IVA. Si un paquete supera los US$ 200, paga IVA. Por eso, cuando tu pedido es grande, lo divido en varios paquetes de menos de US$ 200, que envío en días distintos y te llegan en fechas diferentes, con un costo de US$ 3 por cada paquete adicional.</p></details>
       <details><summary>¿Qué es el casillero?</summary><p>Es la dirección en EE.UU. donde llegan tus compras antes de viajar a Colombia. Yo soy tu casillero: las tiendas envían a mi dirección y de ahí te lo hago llegar.</p></details>
@@ -463,7 +477,7 @@ footer a{display:inline-block;padding:13px 6px}
 
 <script>
 /* Ajustes rápidos (se editan aquí): pedido mínimo, fin de las ofertas (hora de Colombia), sellos y WhatsApp. */
-var MIN_ORDER_USD = 15;
+var MIN_ORDER_USD = 25;
 var CLOSE_AT = "2026-11-28T23:59:00-05:00";
 var STAMPS_GOAL = 5;                      /* sellos para la recompensa */
 var STAMP_REWARD = "un descuento de US$ 10 en el envío de tu siguiente pedido";
