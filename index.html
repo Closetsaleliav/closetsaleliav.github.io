@@ -18,7 +18,7 @@
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="https://liavsalamanca.github.io/Closet-sale-/og-image.png">
-<meta name="cs-version" content="2026-11-21b">
+<meta name="cs-version" content="2026-11-21c">
 <title>Closet Sale Liav</title>
 
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -409,6 +409,7 @@ details[open] p{animation:fadeIn .5s var(--ease) both}
     </div>
     <p class="count" id="count" aria-live="polite"></p>
     <div class="grid" id="grid"></div>
+    <div class="actions" id="moreWrap" style="justify-content:center;margin-top:18px"><button type="button" class="btn ghost" id="more">Ver todas las tiendas</button></div>
     <div class="empty" id="empty">No encontré esa tienda en la lista. Mándame el link igual en el formulario: también compro en otras tiendas de EE.UU.</div>
   </section>
 
@@ -556,7 +557,8 @@ function tick(){
 if (tick()){ var iv = setInterval(function(){ if (!tick()) clearInterval(iv); }, 1000); }
 
 /* stores */
-var active = "Todas", query = "";
+var active = "Todas", query = "", showAll = false;
+var FEATURED = ["Nike","Adidas","Gymshark","Lululemon","Victoria's Secret","Sephora","Ulta Beauty","Amazon","Coach Outlet","Levi's","Tommy Hilfiger","Apple"];
 var chipsEl = document.getElementById("chips"), gridEl = document.getElementById("grid"), countEl = document.getElementById("count"), emptyEl = document.getElementById("empty");
 function norm(s){ return s.toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g,""); }
 function renderChips(){
@@ -575,6 +577,11 @@ function renderGrid(){
   var list = STORES.filter(function(s){
     return (active === "Todas" || s[2].indexOf(active) > -1) && (!q || norm(s[0]).indexOf(q) > -1);
   });
+  var total = list.length, limited = active === "Todas" && !q && !showAll;
+  if (limited) list = list.filter(function(s){ return FEATURED.indexOf(s[0]) > -1; });
+  var moreEl = document.getElementById("moreWrap");
+  moreEl.style.display = limited ? "flex" : "none";
+  document.getElementById("more").textContent = "Ver todas las tiendas (" + total + ")";
   list.forEach(function(s, i){
     var a = document.createElement("a");
     a.className = "store"; a.href = s[1]; a.target = "_blank"; a.rel = "noopener"; a.style.setProperty("--i", Math.min(i, 24));
@@ -586,9 +593,11 @@ function renderGrid(){
     a.appendChild(top); a.appendChild(e);
     gridEl.appendChild(a);
   });
-  countEl.textContent = list.length + (list.length === 1 ? " tienda" : " tiendas");
+  countEl.textContent = limited ? "Las más pedidas. Hay " + total + " tiendas en total." : list.length + (list.length === 1 ? " tienda" : " tiendas");
   emptyEl.style.display = list.length ? "none" : "block";
+  if (limited) return;
 }
+document.getElementById("more").onclick = function(){ showAll = true; renderGrid(); };
 document.getElementById("q").addEventListener("input", function(e){ query = e.target.value; renderGrid(); });
 
 /* order form */
